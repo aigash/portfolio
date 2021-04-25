@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a:hover {
   background:url("../img/bg-socials.jpg");
   color: #fff;
+  text-shadow: 0px 2px 2px #9E9E9E;
   text-decoration: none;
 }
 
@@ -499,6 +500,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: url('../img/bg-button.jpg');
+  text-shadow: 0px 2px 2px #9E9E9E;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
@@ -628,6 +630,7 @@ section {
 .contact .social-links a:hover {
   background:url("../img/bg-socials.jpg");
   color: #fff;
+  text-shadow: 0px 2px 2px #9E9E9E;
   text-decoration: none;
 }
 
