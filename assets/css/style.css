@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #a1f7fa;
+  color: #37b3ed;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #a1f7fa;
   text-decoration: none;
 }
 
@@ -496,11 +496,11 @@ section {
   background: rgba(161, 247, 250, 0.75);
   transition: 0.3s;
   width: 50%;
+  text-shadow: 0px 2px 2px #9E9E9E;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: url('../img/bg-button.jpg');
-  text-shadow: 0px 2px 2px #9E9E9E;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
@@ -639,12 +639,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
+  background:url("../img/hero-bg4.jpg");
 }
 
 .breadcrumbs ol {
@@ -764,6 +759,10 @@ section {
     position: static;
     margin-top: 30px;
   }
+}
+
+.portfolio-description h3 {
+  margin-bottom:20px;
 }
 
 /*--------------------------------------------------------------
