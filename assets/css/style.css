@@ -689,7 +689,7 @@ section {
 
 .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
-  text-align: left;
+  text-align: center;
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot {
@@ -707,12 +707,16 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  position: absolute;
   right: 0;
   bottom: -70px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
+  height: 486.5px;
+}
+
+#carousel {
+  padding-left: 0;
 }
 
 .portfolio-details .portfolio-info h3 {
