@@ -255,6 +255,20 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #a1f7fa;
 }
 
+#cta-hero {
+  z-index: 1;
+  bottom: 30px;
+}
+
+#cta-hero a {
+  color:white;
+  letter-spacing: 3px;
+}
+
+#cta-hero i {
+  font-size: 2rem;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -636,7 +650,11 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background:url("../img/hero-bg4.jpg");
+  /*background-color: #fff;*/
+}
+
+.fond {
+  background: url('../img/hero-bg4.jpg');
 }
 
 .breadcrumbs ol {
@@ -676,6 +694,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  /*background: url('../img/hero-bg4.jpg');*/
 }
 
 .portfolio-details .portfolio-details-container {
@@ -691,9 +710,9 @@ section {
   margin-bottom: 20px;
 }
 
-.portfolio-details .galerimg {
+/*.portfolio-details .galerimg {
   box-shadow: 0px 2px 15px rgb(0 0 0 / 10%) !important;
-}
+}*/
 
 .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
@@ -718,7 +737,7 @@ section {
   right: 0;
   bottom: -70px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);*/
   z-index: 2;
   height: 100%;
 }

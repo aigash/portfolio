@@ -1,0 +1,7 @@
+description document dans details a passer en display none en mobile et petite tablette, en fait une autre après les images du projet
+
+espacer les projets lorsqu'ils sont en colonne
+
+présenter mieux le texte du projet
+
+changer la couleur du fond en gris extremement clair plutot qu'utiliser des ombres
