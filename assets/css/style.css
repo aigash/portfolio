@@ -1,13 +1,3 @@
-/**
-* Template Name: iPortfolio - v1.5.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -61,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  display:none;
   position: fixed;
   top: 0;
   left: 0;
@@ -71,13 +62,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   padding: 0 15px;
   background: #040514;
-  overflow-y: auto;
 }
 
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 180px;
+  width: 250px;
 }
 
 #header .profile h1 {
@@ -117,14 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#main {
-  margin-left: 300px;
-}
-
 @media (max-width: 1199px) {
-  #header {
-    left: -300px;
-  }
   #main {
     margin-left: 0;
   }
@@ -134,6 +117,38 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+#btnMenu {
+  position: fixed;
+  top:2em;
+  left:2em;
+  border: none;
+  background: none;
+  z-index:999;
+}
+
+#btnMenu svg {
+  color:#040514;
+}
+
+#hideMenu {
+  height:2rem;
+  width:2rem;
+  color:#a1f7fa;
+  background-color:#fff;
+  border-radius:150px;
+  position:absolute;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  right:-5%;
+  top:50%;
+  cursor:pointer;
+}
+
+#hideMenu img {
+  width:100%;
+}
+
 .nav-menu {
   padding-top: 30px;
 }
@@ -212,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg2.jpg") top center;
+  background: url("../img/hero-bgmini.jpg") top center;
   background-size: cover;
 }
 
@@ -435,6 +450,14 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#creaGraphique {
+  height:1080px;
+}
+
+.portfoElement {
+  padding-top:1em;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -796,11 +819,12 @@ section {
 .portfolio-description h3 {
   margin-bottom:40px;
   line-height: 18px;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #040514;;
+  color: #040514;
+  line-height:1;
 }
 
 .portfolio-description h4 {
@@ -817,19 +841,28 @@ section {
   margin-bottom: 30px;
 }
 
+/* CAROUSEL */
+
+.owl-stage {
+  width:10000px !important;
+}
+.portfolio-details .owl-stage-outer {
+  box-shadow:none !important;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
-  position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
   z-index: 9999;
   background: #040514;
+  height:55%;
+  display:flex;
+  align-items:end;
 }
 
 #footer .copyright {
@@ -850,3 +883,10 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/* ANIMATIONS */
+@-webkit-keyframes move_menu { from { left:-100%; } to { left: 0; } }
+@keyframes move_menu { from { left:-100%; } to { left: 0; } }
+
+@-webkit-keyframes hide_menu { from { left:0; } to { left: -100%; } }
+@keyframes hide_menu { from { left:0;} to { left: -100%; } }

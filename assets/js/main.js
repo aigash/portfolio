@@ -1,23 +1,28 @@
-/**
-* Template Name: iPortfolio - v1.5.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
-  // Hero typed
-  if ($('.typed').length) {
-    var typed_strings = $(".typed").data('typed-items');
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+  // Navigation
+  let header = document.getElementById('header');
+  let btnMenu = document.getElementById('btnMenu');
+  let hideMenu = document.getElementById('hideMenu');
+  let delay;
+  let delay2;
+
+  if (header.style.display = "none") {
+    btnMenu.addEventListener('click', function (e) {
+        header.style.display = "block"
+        header.style.animation = "0.8s ease move_menu";
     });
+  }
+  if (header.style.display = "true") {
+      hideMenu.addEventListener('click', function (e) {
+          header.style.animation = "0.8s ease hide_menu";
+          delay = setTimeout(hideMenuNav, 800);
+      });
+  }
+
+  function hideMenuNav() {
+    header.style.display = "none";
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
@@ -152,30 +157,38 @@
     });
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
+  //carousel
+  $(document).ready(function(){
+    $(".carousel1").owlCarousel({
+      autoplay:true,
+      loop:true,
+      autoplayTimeout:3000,
+      responsive: {
+        0: {
+            items:1
+        },
+        992: {
+            items:3,
+            margin:15
+        }
       }
-    }
-  });
+    });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
+    $(".carousel2").owlCarousel({
+      rtl:true,
+      autoplay:true,
+      loop:true,
+      autoplayTimeout:3000,
+      responsive: {
+        0: {
+            items:1
+        },
+        992: {
+            items:3,
+            margin:15
+        }
+      }
+    });
   });
 
   // Init AOS

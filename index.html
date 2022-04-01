@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -29,30 +29,33 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.5.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
+  <button id='btnMenu' type='button'>
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+          </path>
+      </svg>
+    </button>
   <!-- ======= Header ======= -->
   <header id="header">
+
+    <div id='hideMenu'>
+      <img src='assets/img/back.svg'>
+    </div>
+
     <div class="d-flex flex-column">
 
       <div class="profile">
         <a href="#hero">
-          <img src="assets/img/logo.png" alt="" class="img-fluid">
+          <img src="assets/img/logoNF.png" alt="" class="img-fluid">
         </a>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.instagram.com/nico_aigash/?hl=fr" target="_blank" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
+          <!--<a href="https://www.instagram.com/nico_aigash/?hl=fr" target="_blank" class="instagram"><i
+              class="bx bxl-instagram"></i></a>-->
           <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/aigash" target="_blank" class="github"><i class='bx bxl-github'></i></a>
@@ -62,27 +65,37 @@
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
+          <li><a href="portfolio.html"><i class="bx bx-book-content"></i>Portfolio</a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>À propos</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i>Portfolio</a></li>
           <li><a href="#formation"><i class="bx bx-file-blank"></i> <span>Parcours</span></a></li>
           <li><a href="#contact"><i class="bx bx-envelope"></i>Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          <p>Nicolas "AiGash" Florentino - 2021</p>
+        </div>
+        <div class="credits">
+
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center position-relative">
     <div class="hero-container" data-aos="fade-in">
       <h1>Nicolas Florentino</h1>
-      <!--<p>Je suis <span class="typed" data-typed-items="Développeur, infographiste"></span></p>-->
-      <p><span>Développeur web</span></p>
+      <p><span>Web designer / développeur</span></p>
     </div>
     <div class="position-absolute d-flex flex-column align-items-center mx-auto" id="cta-hero">
-      <a href="#about" class="scrollto">Accéder au contenu</a>
+      <a href="#about" class="scrollto">Accéder au CV</a>
       <i class=' text-white bx bx-chevron-down'></i>
     </div>
   </section><!-- End Hero -->
@@ -225,6 +238,7 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Portfolio Section ======= -->
+    <!--
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
@@ -232,16 +246,6 @@
           <h2>Portfolio</h2>
           <p>Voici un éventail des projets que j'ai pu réaliser pendant et à côté de mes études de développeur web.</p>
         </div>
-
-        <!--<div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Tous</li>
-              <li data-filter=".filter-perso">Projet perso</li>
-              <li data-filter=".filter-etude">Projet d'étude</li>
-            </ul>
-          </div>
-        </div>-->
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
@@ -311,7 +315,81 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>--><!-- End Portfolio Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="experience" class="experience">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Expériences</h2>
+        </div>
+
+        <div class="col-lg-12 tab-full left">
+          <div class="timeline">
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2021 - Maintenant</p>
+                <h3>Webdesigner / Développeur</h3>
+                <h5>Bifrost Evolution, La Ciotat</h5>
+              </div>
+              <div class="timeline__desc">
+                <ul>
+                  <li>Création de sites Wordpress / Prestashop pour divers clients</li>
+                  <li>Création de sites sur mesure à l'aide du framework de l'entreprise</li>
+                  <li>Création de modules génériques visant à développer le framework</li>
+                  <li>Création et intégration de maquettes de sites</li>
+                  <li>Création d'éléments graphiques (logos, cartes de visite, autocollants connectés)</li>
+                </ul>
+              </div>
+            </div> <!-- end timeline__block -->
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2021 (3 mois)</p>
+                <h3>STAGE DÉVELOPPEUR WEB FULL-STACK</h3>
+                <h5>KMS, Marseille</h5>
+              </div>
+              <div class="timeline__desc">
+                <ul>
+                  <li>Mise en avant du système de fidélité du site, utilisation de PHP, MySQL, Laravel</li>
+                  <li>Mise en place d'un système d'utilisation de points de fidélité dans le but d'obtenir des codes de
+                    réductions lors de l'inscription à un événement</li>
+                  <li>Création d'une page centralisant des événements sportifs, création de filtres et barre de
+                    recherche en JS ,JQuery</li>
+                  <li>Création de template de mails</li>
+                  <li>Création d'une charte graphique</li>
+                  <li>Refonte graphique de l'espace membre</li>
+                  <li>Améliorations graphiques et ergonomiques du site</li>
+                </ul>
+              </div>
+            </div> <!-- end timeline__block -->
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2018 (2 mois)</p>
+                <h3>STAGE GRAPHISTE</h3>
+                <h5>AP-HM, Marseille</h5>
+              </div>
+              <div class="timeline__desc">
+                <ul>
+                  <li>Créations de pictogrammes dédiés à la création de documents médicaux</li>
+                  <li>Mise en page de divers supports imprimés : livrets, affiches, marque-page, documents A4 à
+                    destination des médecins</li>
+                  <li>Créations et préparations de fichiers pour impression notamment un livret de réservation de
+                    chambres d'hôpital à destination des hôpitaux de Marseille</li>
+                </ul>
+              </div>
+            </div> <!-- end timeline__block -->
+
+          </div> <!-- end timeline -->
+        </div> <!-- end left -->
+      </div>
+    </section>
 
     <section id="formation" class="formation">
       <div class="container">
@@ -364,77 +442,6 @@
       </div>
     </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="experience" class="experience">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Expériences</h2>
-        </div>
-
-        <div class="col-lg-12 tab-full left">
-          <div class="timeline">
-
-            <div class="timeline__block">
-              <div class="timeline__bullet"></div>
-              <div class="timeline__header">
-                <p class="timeline__timeframe">2021</p>
-                <h3>STAGE DÉVELOPPEUR WEB FULL-STACK</h3>
-                <h5>KMS, Marseille</h5>
-              </div>
-              <div class="timeline__desc">
-                <ul>
-                  <li>Mise en avant du système de fidélité du site, utilisation de PHP, MySQL, Laravel</li>
-                  <li>Mise en place d'un système d'utilisation de points de fidélité dans le but d'obtenir des codes de
-                    réductions lors de l'inscription à un événement</li>
-                  <li>Création d'une page centralisant des événements sportifs, création de filtres et barre de
-                    recherche en JS ,JQuery</li>
-                  <li>Création de template de mails</li>
-                  <li>Création d'une charte graphique</li>
-                  <li>Refonte graphique de l'espace membre</li>
-                  <li>Améliorations graphiques et ergonomiques du site</li>
-                </ul>
-              </div>
-            </div> <!-- end timeline__block -->
-
-            <div class="timeline__block">
-              <div class="timeline__bullet"></div>
-              <div class="timeline__header">
-                <p class="timeline__timeframe">2018</p>
-                <h3>STAGE GRAPHISTE</h3>
-                <h5>AP-HM, Marseille</h5>
-              </div>
-              <div class="timeline__desc">
-                <ul>
-                  <li>Créations de pictogrammes dédiés à la création de documents médicaux</li>
-                  <li>Mise en page de divers supports imprimés : livrets, affiches, marque-page, documents A4 à
-                    destination des médecins</li>
-                  <li>Créations et préparations de fichiers pour impression notamment un livret de réservation de
-                    chambres d'hôpital à destination des hôpitaux de Marseille</li>
-                </ul>
-              </div>
-            </div> <!-- end timeline__block -->
-
-            <div class="timeline__block">
-              <div class="timeline__bullet"></div>
-              <div class="timeline__header">
-                <p class="timeline__timeframe">2012</p>
-                <h3>STAGE GRAPHISTE</h3>
-                <h5>Antidote design, Marseille</h5>
-              </div>
-              <div class="timeline__desc">
-                <ul>
-                  <li>Créations de divers design pour des briquets</li>
-                  <li>Préparations de fichiers pour impression</li>
-                </ul>
-              </div>
-            </div> <!-- end timeline__block -->
-
-          </div> <!-- end timeline -->
-        </div> <!-- end left -->
-      </div>
-    </section>
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container">
@@ -444,8 +451,8 @@
         </div>
         <!--<h3 class="text-center">N'hésitez pas à me contacter pour divers renseignements supplémentaires.</h3>-->
         <div class="d-flex social-links mt-3 text-center mx-auto justify-content-center">
-          <a href="https://www.instagram.com/nico_aigash/?hl=fr" target="_blank" class="instagram mx-2"><i
-              class="bx bxl-instagram"></i></a>
+          <!--<a href="https://www.instagram.com/nico_aigash/?hl=fr" target="_blank" class="instagram mx-2"><i
+              class="bx bxl-instagram"></i></a>-->
           <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin mx-2"><i
               class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/aigash" target="_blank" class="github mx-2"><i class='bx bxl-github'></i></a>
@@ -456,18 +463,6 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        <p>Nicolas "AiGash" Florentino - 2021</p>
-      </div>
-      <div class="credits">
-
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top"><img class="shadow" src="assets/img/stylish-up.png" alt=""></a>
 
