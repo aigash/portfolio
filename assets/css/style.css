@@ -12,7 +12,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
@@ -32,26 +37,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top img {
-  width:60px;
+  width: 60px;
   position: absolute;
   border-radius: 50%;
 }
 
-.back-to-top img:hover{
+.back-to-top img:hover {
   animation: bounce 0.6s infinite;
 }
 
-@keyframes bounce{
-  from {bottom: 0px;}
-  50%  {bottom: 5px;}
-  to   {bottom: 0px;}
+@keyframes bounce {
+  from {
+    bottom: 0px;
+  }
+
+  50% {
+    bottom: 5px;
+  }
+
+  to {
+    bottom: 0px;
+  }
 }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  display:none;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -80,7 +93,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header .profile h1 a, #header .profile h1 a:hover {
+#header .profile h1 a,
+#header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -101,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a:hover {
-  background:url("../img/bg-socials.jpg");
+  background: url("../img/bg-socials.jpg");
   color: #fff;
   text-shadow: 0px 2px 2px #9E9E9E;
   text-decoration: none;
@@ -119,34 +133,34 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Navigation */
 #btnMenu {
   position: fixed;
-  top:2em;
-  left:2em;
+  top: 2em;
+  left: 2em;
   border: none;
   background: none;
-  z-index:999;
+  z-index: 999;
 }
 
 #btnMenu svg {
-  color:#040514;
+  color: #040514;
 }
 
 #hideMenu {
-  height:2rem;
-  width:2rem;
-  color:#a1f7fa;
-  background-color:#fff;
-  border-radius:150px;
-  position:absolute;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  right:-5%;
-  top:50%;
-  cursor:pointer;
+  height: 2rem;
+  width: 2rem;
+  color: #a1f7fa;
+  background-color: #fff;
+  border-radius: 150px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -5%;
+  top: 50%;
+  cursor: pointer;
 }
 
 #hideMenu img {
-  width:100%;
+  width: 100%;
 }
 
 .nav-menu {
@@ -159,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
 }
@@ -180,12 +194,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #6f7180;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
+.nav-menu a:hover i,
+.nav-menu .active>a i,
+.nav-menu li:hover>a i {
   color: #a1f7fa;
 }
 
@@ -276,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #cta-hero a {
-  color:white;
+  color: white;
   letter-spacing: 3px;
 }
 
@@ -295,10 +313,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+
+  #hero p span {
+    letter-spacing: 0;
+  }
+
+  .timeline__block {
+    padding-left: 4rem;
   }
 }
 
@@ -404,7 +431,8 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #040514;;
+  color: #040514;
+  ;
   margin-bottom: 35px;
 }
 
@@ -420,7 +448,8 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #040514;;
+  color: #040514;
+  ;
 }
 
 .skills .progress .skill .val {
@@ -440,22 +469,22 @@ section {
 }
 
 .skills ul {
-  padding:0;
+  padding: 0;
 }
 
 .skill img {
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 #creaGraphique {
-  height:1080px;
+  height: 1080px;
 }
 
 .portfoElement {
-  padding-top:1em;
+  padding-top: 1em;
 }
 
 .portfolio .portfolio-item {
@@ -485,7 +514,8 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #a1f7fa;
 }
 
@@ -527,17 +557,17 @@ section {
   background: url('../img/bg-button.jpg');
 }
 
-.portfolio .portfolio-wrap .portfolio-links a + a {
+.portfolio .portfolio-wrap .portfolio-links a+a {
   border-left: 1px solid #a1f7fa;
 }
 
-.portfolio .portfolio-text{
-  height:200px;
-  background-color:white;
+.portfolio .portfolio-text {
+  height: 200px;
+  background-color: white;
   padding: 1rem 1.25rem 1rem;
 }
 
-.portfolio .portfolio-text h3{
+.portfolio .portfolio-text h3 {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 700;
@@ -568,7 +598,7 @@ section {
   transition: all ease-in-out 0.3s;
 }
 
-.portfolio .img-overlay i{
+.portfolio .img-overlay i {
   color: #fff;
   font-size: 3em;
 }
@@ -662,7 +692,7 @@ section {
 }
 
 .contact .social-links a:hover {
-  background:url("../img/bg-socials.jpg");
+  background: url("../img/bg-socials.jpg");
   color: #fff;
   text-shadow: 0px 2px 2px #9E9E9E;
   text-decoration: none;
@@ -689,11 +719,11 @@ section {
   font-size: 15px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #0e2442;
@@ -704,9 +734,11 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
@@ -741,7 +773,8 @@ section {
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -783,7 +816,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -803,13 +836,14 @@ section {
 }
 
 .portfolio-details .owl-stage-outer {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
   }
+
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
@@ -817,24 +851,25 @@ section {
 }
 
 .portfolio-description h3 {
-  margin-bottom:40px;
+  margin-bottom: 40px;
   line-height: 18px;
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #040514;
-  line-height:1;
+  line-height: 1;
 }
 
 .portfolio-description h4 {
-  margin-bottom:20px;
+  margin-bottom: 20px;
   line-height: 18px;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #040514;;
+  color: #040514;
+  ;
 }
 
 .portfolio-description p {
@@ -844,10 +879,11 @@ section {
 /* CAROUSEL */
 
 .owl-stage {
-  width:10000px !important;
+  width: 10000px !important;
 }
+
 .portfolio-details .owl-stage-outer {
-  box-shadow:none !important;
+  box-shadow: none !important;
 }
 
 /*--------------------------------------------------------------
@@ -860,9 +896,9 @@ section {
   bottom: 0;
   z-index: 9999;
   background: #040514;
-  height:55%;
-  display:flex;
-  align-items:end;
+  height: 55%;
+  display: flex;
+  align-items: end;
 }
 
 #footer .copyright {
@@ -885,8 +921,42 @@ section {
 }
 
 /* ANIMATIONS */
-@-webkit-keyframes move_menu { from { left:-100%; } to { left: 0; } }
-@keyframes move_menu { from { left:-100%; } to { left: 0; } }
+@-webkit-keyframes move_menu {
+  from {
+    left: -100%;
+  }
 
-@-webkit-keyframes hide_menu { from { left:0; } to { left: -100%; } }
-@keyframes hide_menu { from { left:0;} to { left: -100%; } }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes move_menu {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes hide_menu {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes hide_menu {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -100%;
+  }
+}
