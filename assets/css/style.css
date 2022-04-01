@@ -695,6 +695,14 @@ section {
 }
 
 @media (max-width: 768px) {
+  .skills .progress .skill {
+    font-size: 0.7rem !important;
+  }
+
+  .skill img {
+    width: 35px !important;
+  }
+
   .breadcrumbs .d-flex {
     display: block !important;
   }
