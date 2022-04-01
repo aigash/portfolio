@@ -130,7 +130,6 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Desktop Navigation */
 #btnMenu {
   position: fixed;
   top: 2em;
@@ -207,41 +206,7 @@ h6 {
   color: #a1f7fa;
 }
 
-/* Mobile Navigation */
-.mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  line-height: 1;
-  cursor: pointer;
-  text-align: right;
-}
 
-.mobile-nav-toggle i {
-  color: #a1f7fa;
-}
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-.mobile-nav-active #header {
-  left: 0;
-}
-
-.mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
@@ -343,9 +308,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -427,9 +389,6 @@ section {
   padding-bottom: 3rem;
 }
 
-/*--------------------------------------------------------------
-# Akills
---------------------------------------------------------------*/
 
 .skills {
   padding-top: 0;
@@ -617,9 +576,6 @@ section {
   font-size: 3em;
 }
 
-/*--------------------------------------------------------------
-# Expérience
---------------------------------------------------------------*/
 .timeline {
   position: relative;
   text-align: left;
@@ -679,9 +635,6 @@ section {
   padding-bottom: 3rem;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
 }
@@ -712,12 +665,8 @@ section {
   text-decoration: none;
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  /*background-color: #fff;*/
 }
 
 .fond {
@@ -758,12 +707,8 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
-  /*background: url('../img/hero-bg4.jpg');*/
 }
 
 .portfolio-details .portfolio-details-container {
@@ -778,10 +723,6 @@ section {
 .portfolio-details .carousel-head {
   margin-bottom: 20px;
 }
-
-/*.portfolio-details .galerimg {
-  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%) !important;
-}*/
 
 .portfolio-details .galerie div {
   margin-bottom: 20px;
@@ -811,7 +752,6 @@ section {
   right: 0;
   bottom: -70px;
   background: #fff;
-  /*box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);*/
   z-index: 2;
   height: 100%;
 }
