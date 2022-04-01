@@ -671,6 +671,7 @@ section {
 
 .fond {
   background: url('../img/hero-bg4.jpg');
+  background-size: cover;
 }
 
 .breadcrumbs ol {
