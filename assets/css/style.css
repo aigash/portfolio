@@ -324,6 +324,19 @@ h6 {
     letter-spacing: 0;
   }
 
+  #btnMenu {
+    top: 1em;
+    left: auto;
+    right: 1em;
+  }
+
+  #btnMenu svg {
+    background-color: white;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+  }
+
   .timeline__block {
     padding-left: 4rem;
   }
