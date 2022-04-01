@@ -701,6 +701,7 @@ section {
 
   .skill img {
     width: 35px !important;
+    margin-right: 10px !important;
   }
 
   .breadcrumbs .d-flex {
