@@ -322,6 +322,7 @@ h6 {
 
   #hero p span {
     letter-spacing: 0;
+    font-size: 1.3rem;
   }
 
   #btnMenu {
@@ -338,7 +339,7 @@ h6 {
   }
 
   .timeline__block {
-    padding-left: 4rem;
+    padding-left: 4rem !important;
   }
 }
 
