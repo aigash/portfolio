@@ -665,6 +665,18 @@ section {
   text-decoration: none;
 }
 
+.contact #blockTel {
+  display: none;
+  justify-content: center;
+  padding: 2em;
+}
+
+.contact #blockTel h3 {
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+
 .breadcrumbs {
   padding: 20px 0;
 }
