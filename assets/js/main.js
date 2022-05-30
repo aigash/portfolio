@@ -189,6 +189,19 @@
         }
       }
     });
+
+    $(".carouselExp").owlCarousel({
+      autoplay:false,
+      loop:false,
+      items:1,
+      URLhashListener:true,
+      startPosition: 'URLHash'
+    });
+
+    $("#tel-contact").click(function() {
+      $('#box-tel').css('display', 'flex');
+    })
+
   });
 
   // Init AOS

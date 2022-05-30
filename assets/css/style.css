@@ -734,12 +734,66 @@ section {
   padding-bottom: 3rem;
 }
 
+#exp-formation .imgExp {
+  width:200px;
+}
+
+#exp-formation .exp-bloc {
+  align-items:center;
+  justify-content:space-evenly;
+}
+
+#exp-formation .timeline__desc ul {
+  padding-bottom:0;
+}
+
+#exp-formation .nav-parcours {
+  justify-content:space-between;
+  margin-bottom:50px;
+  position:relative;
+}
+
+#exp-formation .nav-parcours:before {
+  content:"";
+  position:absolute;
+  display:block;
+  height:2px;
+  top:39px;
+  left:1px;
+  right:1px;
+  width:auto;
+  background-color:#e8e8e8;
+  z-index:1;
+}
+
+#exp-formation .nav-parcours>div {
+  background-color:#040514;
+  width:80px;
+  height:80px;
+  justify-content:center;
+  align-items:center;
+  border-radius:150px;
+  z-index:10;
+}
+
+#exp-formation .nav-parcours>div:hover {
+  background: url(../img/bg-socials.jpg);
+}
+
+#exp-formation .button-url {
+  color:white;
+}
+
 .contact {
   padding-bottom: 130px;
 }
 
 .contact h3 {
   font-size: 1.4rem;
+}
+
+.contact .social-links {
+  margin-bottom:1.5em;
 }
 
 .contact .social-links a {
@@ -762,6 +816,17 @@ section {
   color: #fff;
   text-shadow: 0px 2px 2px #9E9E9E;
   text-decoration: none;
+}
+
+#box-tel {
+  display:none;
+  justify-content:center;
+}
+
+#box-tel p {
+  background-color:white;
+  font-weight:600;
+  padding:0.5em 1.5em;
 }
 
 .breadcrumbs {
@@ -1054,6 +1119,23 @@ section {
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
+  }
+
+  #exp-formation .nav-parcours>div {
+    width:50px;
+    height:50px;
+  }
+
+  #exp-formation .nav-parcours:before {
+    top:24px;
+  }
+
+  #exp-formation .exp-bloc {
+    flex-direction:column;
+  }
+
+  #exp-formation .imgExp {
+    margin-bottom:1em;
   }
 }
 
