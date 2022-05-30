@@ -206,7 +206,6 @@ h6 {
   color: #a1f7fa;
 }
 
-
 #hero {
   width: 100%;
   height: 100vh;
@@ -216,7 +215,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(4, 5, 100, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -374,6 +373,40 @@ section {
   margin-bottom: 0;
 }
 
+.about .section-title>div>div:first-child {
+  width:20%;
+}
+.about .section-title>div>div:first-child img {
+  width:100%;
+  margin-bottom:1em;
+}
+.about .section-title>div>div:first-child p {
+  margin-bottom:2px;
+}
+
+.about .section-title>div>div:nth-child(2) {
+  width:80%;
+  padding-left:2em;
+  text-align:justify;
+}
+.about .section-title>div>div:nth-child(2) p {
+  margin-bottom:2em;
+}
+
+#btn-CV {
+  background-color: #040514;
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+}
+
+#btn-CV:hover {
+  background: url('../img/bg-button.jpg');
+  background-size:cover;
+  text-shadow: 0px 2px 2px #9E9E9E;
+}
+
 /*--------------------------------------------------------------
 # Formation
 --------------------------------------------------------------*/
@@ -389,13 +422,20 @@ section {
   padding-bottom: 3rem;
 }
 
-
 .skills {
   padding-top: 0;
 }
 
+.skills .skills-bloc {
+  justify-content:space-evenly;
+}
+
 .skills .section-title {
   padding-bottom: 40px;
+}
+
+.skills .skills-content>div>div {
+  flex-wrap:wrap;
 }
 
 .skills-content h4 {
@@ -413,10 +453,10 @@ section {
   height: 50px;
   display: block;
   background: none;
+  margin: 0 0 6px 0;
 }
 
 .skills .progress .skill {
-  margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
@@ -452,8 +492,65 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-#creaGraphique {
-  height: 1080px;
+.portfolio-cat {
+  width:500px;
+  height:260px;
+  padding:3em;
+  margin-bottom:2em;
+  position:relative;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.portfolio-cat div {
+  z-index:11;
+}
+
+.portfolio-cat>div:first-child p {
+  font-weight:300;
+}
+
+.portfolio-cat>div:nth-child(2) p {
+  text-align:end;
+  border-bottom:1px solid white;
+}
+
+.portfolio-cat h4, .portfolio-cat p {
+  color:white;
+  margin-bottom:0;
+  text-shadow: 0px 1px 1px #9e9e9e;
+}
+
+.portfolio-cat h4 {
+  margin-bottom:0.5em;
+}
+
+.portfolio-cat .portfo-filter {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background: rgba(4,5,100,0.3);
+  top:0;
+  left:0;
+  z-index:1;
+}
+
+.link-portfo:hover .portfo-filter {
+  background: rgba(4,5,100,0.06);
+}
+
+#portfolio-web {
+  background: url('../img/cat1.jpg');
+  background-size:cover;
+}
+
+#portfolio-graphique {
+  background: url('../img/cat2.jpg');
+  background-size:cover;
+}
+
+#creaGraphique .owl-carousel:nth-child(3) .owl-dots {
+  display:none;
 }
 
 .portfoElement {
@@ -576,6 +673,8 @@ section {
   font-size: 3em;
 }
 
+/* experience et formation */
+
 .timeline {
   position: relative;
   text-align: left;
@@ -665,23 +764,11 @@ section {
   text-decoration: none;
 }
 
-.contact #blockTel {
-  display: none;
-  justify-content: center;
-  padding: 2em;
-}
-
-.contact #blockTel h3 {
-  background-color: white;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-}
-
 .breadcrumbs {
   padding: 20px 0;
 }
 
-.fond {
+#main > .portfoElement:nth-child(odd) {
   background: url('../img/hero-bg4.jpg');
   background-size: cover;
 }
@@ -706,28 +793,7 @@ section {
   content: "/";
 }
 
-@media (max-width: 768px) {
-  .skills .progress .skill {
-    font-size: 0.7rem !important;
-  }
-
-  .skill img {
-    width: 35px !important;
-    margin-right: 10px !important;
-  }
-
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
+/* portfolio page */
 
 .portfolio-details {
   padding-top: 40px;
@@ -778,6 +844,10 @@ section {
   height: 100%;
 }
 
+#bidrasil .portfolio-details .portfolio-info {
+  height:auto;
+}
+
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 400;
@@ -813,17 +883,6 @@ section {
 
 .portfolio-details .owl-stage-outer {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
-}
-
-@media (max-width: 768px) {
-  .portfolio-details .portfolio-description h2 {
-    width: 100%;
-  }
-
-  .portfolio-details .portfolio-info {
-    position: static;
-    margin-top: 30px;
-  }
 }
 
 .portfolio-description h3 {
@@ -927,5 +986,79 @@ section {
 
   to {
     left: -100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .skills .skills-bloc>div {
+    width:33%;
+  }
+
+  #portfolio .link-portfo {
+    width:50%;
+  }
+
+  #portfolio .portfolio-cat {
+    width:100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about .section-title>div {
+    flex-direction:column;
+  }
+
+  #about .section-title>div>div {
+    width:100%;
+    margin-bottom:1em;
+  }
+
+  .about .section-title>div>div:nth-child(2) {
+    padding:0;
+  }
+
+  .skills .progress .skill {
+    font-size: 0.7rem !important;
+  }
+
+  .skill img {
+    width: 35px !important;
+    margin-right: 10px !important;
+    height:auto !important;
+  }
+
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+
+  #portfolio .portfo-bloc {
+    flex-direction:column;
+  }
+
+  #portfolio .portfolio-cat, #portfolio .link-portfo {
+    width:100%;
+  }
+
+  .portfolio-details .portfolio-description h2 {
+    width: 100%;
+  }
+
+  .portfolio-details .portfolio-info {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 399px) {
+  .skills .skills-bloc>div {
+    width:50%;
   }
 }

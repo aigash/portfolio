@@ -26,6 +26,7 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -64,13 +65,14 @@
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-          <li><a href="portfolio.html"><i class="bx bx-book-content"></i>Portfolio</a></li>
+          <li><a href="projets-web.html"><i class="bx bx-book-content"></i>Projets web</a></li>
+          <li><a href="projets-graphiques.html"><i class="bx bx-book-content"></i>Projets graphiques</a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>À propos</span></a></li>
           <li><a href="#formation"><i class="bx bx-file-blank"></i> <span>Parcours</span></a></li>
           <li><a href="#contact"><i class="bx bx-envelope"></i>Contact</a></li>
 
         </ul>
-      </nav>
+      </nav><!-- .nav-menu -->
 
     </div>
     <!-- ======= Footer ======= -->
@@ -83,9 +85,9 @@
 
         </div>
       </div>
-    </footer>
+    </footer><!-- End  Footer -->
 
-  </header>
+  </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center position-relative">
@@ -97,7 +99,7 @@
       <a href="#about" class="scrollto">Accéder au CV</a>
       <i class=' text-white bx bx-chevron-down'></i>
     </div>
-  </section>
+  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -107,21 +109,31 @@
 
         <div class="section-title">
           <h2>À propos</h2>
-          <p>Passionné par le dessin que je pratique depuis petit, j'ai décidé d'y consacrer mes études à la sortie du
-            bac. Mes années de BTS Design Graphique ont éveillé en moi un attrait pour le développement web et c'est
-            la raison pour laquelle j'ai voulu compléter mon profil en me dirigeant vers une formation de développeur.
-            Par ailleurs, c'est en réalisant divers projets web lors de cette formation et en entreprise que j'ai pu
-            confirmer cet équilibre professionnel design / développement dans lequel je projette complètement mon
-            avenir.
-            <br><br>
-            Ma curiosité m'a toujours poussé à vouloir en découvrir davantage dans un domaine comme dans l'autre,
-            c'est pourquoi je l'ai souvent exprimé à travers des projets personnels dans lesquels je me suis donné à
-            fond pour compléter ma formation durant et en dehors de mes études.
-          </p>
+          <div class='d-flex'>
+            <div>
+              <img src='assets/img/moi.jfif'>
+              <p><b>&Acirc;ge</b> : 26 ans (05/08/1995)</p>
+              <p><b>Localisation</b> : Marseille</p>
+            </div>
+            <div>
+              <p>Passionné par le dessin que je pratique depuis petit, j'ai décidé d'y consacrer mes études à la sortie du
+                bac. Mes années de BTS Design Graphique ont éveillé en moi un attrait pour le développement web et c'est
+                la raison pour laquelle j'ai voulu compléter mon profil en me dirigeant vers une formation de développeur.
+                Par ailleurs, c'est en réalisant divers projets web lors de cette formation et en entreprise que j'ai pu
+                confirmer cet équilibre professionnel design / développement dans lequel je projette complètement mon
+                avenir.
+                <br><br>
+                Ma curiosité m'a toujours poussé à vouloir en découvrir davantage dans un domaine comme dans l'autre,
+                c'est pourquoi je l'ai souvent exprimé à travers des projets personnels dans lesquels je me suis donné à
+                fond pour compléter ma formation durant et en dehors de mes études.
+              </p>
+              <button id='btn-CV' type='submit'>Télécharger mon CV</button>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section>
+    </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills">
@@ -131,14 +143,14 @@
           <h2>Compétences</h2>
         </div>
 
-        <div class="row skills-content">
+        <div class="row skills-content px-3">
 
-          <div class="col-lg-6" data-aos="fade-up">
-            <div>
-              <h4>Développement web</h4>
-            </div>
-            <div class="d-flex">
-              <div class="col-lg-6">
+          <div class="col-lg px-0" data-aos="fade-up">
+            <div class="d-flex skills-bloc">
+              <div class="">
+                <div>
+                  <h4>FRONT END</h4>
+                </div>
                 <ul>
                   <li class="progress">
                     <span class="skill"><img src="assets/img/icones/icons8-html-5.svg" alt="">HTML</span>
@@ -149,51 +161,65 @@
                   </li>
 
                   <li class="progress">
+                    <span class="skill"><img src="assets/img/icones/icons8-bootstrap.svg" alt="">Bootstrap</span>
+                  </li>
+
+                  <li class="progress">
                     <span class="skill"><img src="assets/img/icones/icons8-javascript.svg" alt="">JavaScript</span>
                   </li>
 
                   <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/new-php-logo.svg" width="48" height="48" alt=""
+                    <span class="skill"><img src="assets/img/icones/icons8-jquery.png" height="48" alt="">jQuery</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <div>
+                  <h4>BACK END</h4>
+                </div>
+                <ul>
+                  <li class="progress">
+                    <span class="skill"><img src="assets/img/icones/new-php-logo.svg" height="48" alt=""
                         style="padding:3px;">PHP</span>
                   </li>
 
                   <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/icons8-mysql-logo.svg" alt="" width="48" height="48"
+                    <span class="skill"><img src="assets/img/icones/icons8-mysql-logo.svg" alt="" height="48"
                         style="padding:4px;">MySQL</span>
+                  </li>
+
+                  <li class="progress">
+                    <span class="skill"><img src="assets/img/icones/icons8-symfony.svg" alt="" height="48"
+                        style="padding:6px;">Symfony</span>
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="">
+                <div>
+                  <h4>OUTILS / CMS</h4>
+                </div>
                 <ul>
                   <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/icons8-bootstrap.svg" alt="">Bootstrap</span>
+                    <span class="skill"><img src="assets/img/icones/Octocat.png" width="48" alt=""
+                        style="padding:1px;">GitHub</span>
                   </li>
 
                   <li class="progress">
                     <span class="skill"><img src="assets/img/icones/icons8-wordpress.svg" alt="">WordPress</span>
                   </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/algorithm.svg" alt="" width="48" height="48"
-                        style="padding:6px;">Algorithmie</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/Octocat.png" width="48" alt=""
-                        style="padding:1px;">GitHub</span>
-                  </li>
                 </ul>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div>
-              <h4>Design graphique</h4>
-            </div>
-            <div class="d-flex">
-              <div class="col-lg-6">
+         
+              <div class="">
+                <div>
+                  <h4>DESIGN</h4>
+                </div>
                 <ul>
+                  <li class="progress">
+                    <span class="skill"><img src="assets/img/icones/figma-1.svg" height="48"
+                        style="padding:6px;" alt="">Figma</span>
+                  </li>
+
                   <li class="progress">
                     <span class="skill"><img src="assets/img/icones/icons8-adobe-photoshop.svg" alt="">Photoshop</span>
                   </li>
@@ -210,18 +236,40 @@
                   <li class="progress">
                     <span class="skill"><img src="assets/img/icones/icons8-adobe-xd.svg" alt="">Adobe Xd</span>
                   </li>
+                </ul>
+              </div>
+              <div class="">
+                <div>
+                  <h4>SOFT SKILLS</h4>
+                </div>
+                <ul>
+                  <li class="progress">
+                    <span class="skill"><img src="assets/img/icones/icons8-curiosite.png" height="48"
+                        alt="">Curiosité</span>
+                  </li>
 
                   <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/icons8-adobe-premiere-pro.svg" alt="">Premiere
-                      Pro</span>
+                    <span class="skill"><img src="assets/img/icones/icons8-creativite.png" alt="">Créativité</span>
+                  </li>
+
+                  <li class="progress">
+                    <span class="skill"><img src="assets/img/icones/icons8-adaptable.png" height="48"
+                        alt="">Adaptabilité</span>
+                  </li>
+
+                  <li class="progress">
+                    <span class="skill"><img src="assets/img/icones/icons8-teamwork.png" height="48" alt="">Teamwork</span>
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="">
+                <div>
+                  <h4>LANGUES</h4>
+                </div>
                 <ul>
                   <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/figma-1.svg" height="48" width="48"
-                        style="padding:6px;" alt="">Figma</span>
+                    <span class="skill"><img src="assets/img/icones/icons8-anglais.png" height="48" width="48"
+                        style="padding:6px;" alt="">B1</span>
                   </li>
                 </ul>
               </div>
@@ -231,7 +279,112 @@
         </div>
 
       </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="w-100" data-aos="fade-up" data-aos-delay="100">
+          <div class='d-flex justify-content-between portfo-bloc'>
+            <a class='link-portfo' href='projets-web.html'>
+              <div class='portfolio-cat d-flex' id='portfolio-web'>
+                <div>
+                  <h4>PROJETS WEB</h4>
+                  <p>- Création d'éléments graphiques<br>- Maquettes sites internet</p>
+                </div>
+                <div>
+                  <p>Accéder</p>
+                </div>
+                <div class='portfo-filter'></div>
+              </div>
+            </a>
+
+            <a class='link-portfo' href='projets-graphiques.html'>
+              <div class='portfolio-cat d-flex' id='portfolio-graphique'>
+                <div>
+                  <h4>PROJETS GRAPHIQUES</h4>
+                  <p>- Création de sites internet sous diverses technologies<br>- Création de jeux-vidéos</p>
+                </div>
+                <div>
+                  <p>Accéder</p>
+                </div>
+                <div class='portfo-filter'></div>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-perso">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Weakside.jpg" class="img-fluid" alt="">
+              <div class="portfolio-text">
+                <h3>WEAKSIDE</h3>
+                <p>Weakside est un projet personnel sur le jeu League of Legends que j'ai mené avec un ami dans le but
+                  d'améliorer mes compétences en back-end et par la suite de servir de vitrine à celles-ci.</p>
+              </div>
+              <a href="weakside.html" class="img-overlay">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-etude">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ana-nades.jpg" class="img-fluid" alt="">
+              <div class="portfolio-text">
+                <h3>Ana Nades</h3>
+                <p>Ana Nades est un projet de création de site web avec le framework Symfony réalisé dans le cadre de ma formation de développeur web. </p>
+              </div>
+              <a href="ana-nades.html" class="img-overlay">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-etude">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/projectr.jpg" class="img-fluid" alt="">
+              <div class="portfolio-text">
+                <h3>Project R</h3>
+                <p>Project R est un projet de création de jeu vidéo de type runner sans fin réalisé en groupe de 5 et à l'aide de la librairie Phaser 3.</p>
+              </div>
+              <a href="ProjectR.html" class="img-overlay">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-etude">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Animafriends.jpg" class="img-fluid" alt="">
+              <div class="portfolio-text">
+                <h3>ANIMAFRIENDS</h3>
+                <p>Animafriends est un projet de création de maquette d'application fictive ainsi que de landing page
+                  créée sous WordPress dans le cadre de ma formation de développeur web. </p>
+              </div>
+              <a href="Animafriends.html" class="img-overlay">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-etude">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Afelis.jpg" class="img-fluid" alt="">
+              <div class="portfolio-text">
+                <h3>AFÉLIS</h3>
+                <p>Afélis est un projet web réalisé dans le cadre de ma formation de développeur web. Le but était de
+                  créer une landing page de site e-commerce uniquement en HTML CSS. </p>
+              </div>
+              <a href="afelis.html" class="img-overlay">
+              </a>
+            </div>
+          </div>-->
+
+        </div>
+
+      </div>
     </section>
+    <!-- End Portfolio Section -->
 
     <!-- ======= Resume Section ======= -->
     <section id="experience" class="experience">
@@ -247,8 +400,8 @@
             <div class="timeline__block">
               <div class="timeline__bullet"></div>
               <div class="timeline__header">
-                <p class="timeline__timeframe">2021 - Maintenant</p>
-                <h3>WEBDESIGNER / DÉVELOPPEUR</h3>
+                <p class="timeline__timeframe">2021 - 2022 (6 mois)</p>
+                <h3>Webdesigner / Développeur</h3>
                 <h5>Bifrost Evolution, La Ciotat</h5>
               </div>
               <div class="timeline__desc">
@@ -260,7 +413,7 @@
                   <li>Création d'éléments graphiques (logos, cartes de visite, autocollants connectés)</li>
                 </ul>
               </div>
-            </div>
+            </div> <!-- end timeline__block -->
 
             <div class="timeline__block">
               <div class="timeline__bullet"></div>
@@ -282,7 +435,7 @@
                   <li>Améliorations graphiques et ergonomiques du site</li>
                 </ul>
               </div>
-            </div>
+            </div> <!-- end timeline__block -->
 
             <div class="timeline__block">
               <div class="timeline__bullet"></div>
@@ -300,10 +453,10 @@
                     chambres d'hôpital à destination des hôpitaux de Marseille</li>
                 </ul>
               </div>
-            </div>
+            </div> <!-- end timeline__block -->
 
-          </div>
-        </div>
+          </div> <!-- end timeline -->
+        </div> <!-- end left -->
       </div>
     </section>
 
@@ -324,7 +477,7 @@
                 <h3>FORMATION DÉVELOPPEUR FULL-STACK</h3>
                 <h5>Passerelle numérique d'école Centrale Marseille</h5>
               </div>
-            </div>
+            </div> <!-- end timeline__block -->
 
             <div class="timeline__block">
               <div class="timeline__bullet"></div>
@@ -333,7 +486,7 @@
                 <h3>NIVEAU BTS DESIGN GRAPHIQUE</h3>
                 <h5>ESDAC Marseille</h5>
               </div>
-            </div>
+            </div> <!-- end timeline__block -->
 
             <div class="timeline__block">
               <div class="timeline__bullet"></div>
@@ -342,7 +495,7 @@
                 <h3>MISE À NIVEAU EN ARTS APPLIQUÉS</h3>
                 <h5>ESDAC Marseille</h5>
               </div>
-            </div>
+            </div> <!-- end timeline__block -->
 
             <div class="timeline__block">
               <div class="timeline__bullet"></div>
@@ -351,10 +504,10 @@
                 <h3>FORMATION INFOGRAPHISTE</h3>
                 <h5>Haute École en Hainaut (Belgique)</h5>
               </div>
-            </div>
+            </div> <!-- end timeline__block -->
 
-          </div>
-        </div>
+          </div> <!-- end timeline -->
+        </div> <!-- end left -->
       </div>
     </section>
 
@@ -365,22 +518,20 @@
         <div class="section-title">
           <h2>Contact</h2>
         </div>
-
+        <!--<h3 class="text-center">N'hésitez pas à me contacter pour divers renseignements supplémentaires.</h3>-->
         <div class="d-flex social-links mt-3 text-center mx-auto justify-content-center">
-          <a href="tel:0607370248" class="tel mx-2" id="tel"><i class="bx bx-phone"></i></a>
+          <!--<a href="https://www.instagram.com/nico_aigash/?hl=fr" target="_blank" class="instagram mx-2"><i
+              class="bx bxl-instagram"></i></a>-->
           <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin mx-2"><i
               class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/aigash" target="_blank" class="github mx-2"><i class='bx bxl-github'></i></a>
           <a href="mailto:nicolas.florentino00@gmail.com" class="mail mx-2"><i class='bx bx-envelope'></i></a>
         </div>
 
-        <div id="blockTel">
-          <h3>06 07 37 02 48</h3>
-        </div>
       </div>
-    </section>
+    </section><!-- End Contact Section -->
 
-  </main>
+  </main><!-- End #main -->
 
   <a href="#" class="back-to-top"><img class="shadow" src="assets/img/stylish-up.png" alt=""></a>
 
@@ -397,6 +548,7 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
