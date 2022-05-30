@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<title>icons8-adobe-premiere-pro-svg</title>
+	<style>
+		.s0 { fill: #e040fb } 
+		.s1 { fill: #020f16 } 
+	</style>
+	<rect id="Layer" class="s0" width="48" height="48" rx="5"></rect>
+	<path id="Layer" fill-rule="evenodd" class="s1" d="m4 4h40v40h-40zm22.1 16.7q0-2.8-1.6-4.6-1.7-1.7-4.5-1.7h-6.7v18.9h4.1v-6.6h2.5q2.9 0 4.6-1.6 1.6-1.7 1.6-4.4zm-4.4-2.3q0.6 0.9 0.6 2.3 0 1.3-0.6 2.1-0.6 0.7-1.7 0.7h-2.6v-5.9h2.6q1.1 0 1.7 0.8zm14.7 0.7c-0.3-0.2-0.7-0.2-1.1-0.2-1 0-1.8 0.6-2.4 1.8l-0.1-1.5h-3.5v14.1h3.8v-9.3c0.2-0.9 0.9-1.3 2-1.3l1.2 0.1z"/>
+</svg>

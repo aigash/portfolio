@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<title>icons8-css3-svg</title>
+	<style>
+		.s0 { fill: #0277bd } 
+		.s1 { fill: #039be5 } 
+		.s2 { fill: #ffffff } 
+		.s3 { fill: #eeeeee } 
+	</style>
+	<g id="Dossier 1">
+		<path id="Layer" class="s0" d="m41.2 42.9l-17.7 5.1-17.7-5.1-3.8-42.9h43z"/>
+		<path id="Layer" class="s1" d="m40.8 3.8l-3.1 36.2-14.2 4.1v-40.3z"/>
+		<path id="Layer" class="s2" d="m34.4 20.2l-0.9 14.5-10 3.3v-5.3l5.2-1.8 0.4-5.6h-5.6v-5.1h5.8l0.4-5h-6.2v-5.1h11.5z"/>
+		<path id="Layer" fill-rule="evenodd" class="s3" d="m23.5 10.1v5.1h-11.3l-0.3-5.1zm-5.9 10.1l0.3 5.1h5.6v-5.1zm0.5 7.6h-5.1l0.4 6.9 10 3.3v-5.3l-5.2-1.8z"/>
+	</g>
+</svg>
