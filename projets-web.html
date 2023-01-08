@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -14,9 +14,7 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,509 +28,573 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-</head>
+  </head>
 
-<body>
+  <body id='web'>
 
-    <button id='btnMenu' type='button'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi" fill="currentColor"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-            </path>
-        </svg>
-    </button>
-
-    <header id="header">
-
-        <div id='hideMenu'>
-            <img src='assets/img/back.svg'>
+    <nav id='main-menu' class="navbar navbar-expand-lg">
+      <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi" fill="currentColor" viewbox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html#hero">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Projets
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="projets-web.html">Web</a>
+                <a class="dropdown-item" href="projets-graphiques.html">Graphiques</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#exp-formation">Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="d-flex flex-column">
-
-            <div class="profile">
-                <a href="#hero">
-                    <img src="assets/img/logoNF.png" alt="" class="img-fluid">
-                </a>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin"><i
-                            class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/aigash" target="_blank" class="github"><i class='bx bxl-github'></i></a>
-                </div>
-            </div>
-
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html#hero"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-                    <li class="active"><a href="projets-web.html"><i class="bx bx-book-content"></i>Projets web</a></li>
-                    <li><a href="projets-graphiques.html"><i class="bx bx-book-content"></i>Projets graphiques</a></li>
-                    <li><a href="index.html#about"><i class="bx bx-user"></i> <span>À propos</span></a></li>
-                    <li><a href="index.html#exp-formation"><i class="bx bx-file-blank"></i> <span>Parcours</span></a></li>
-                    <li><a href="index.html#contact"><i class="bx bx-envelope"></i>Contact</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-
-        </div>
-        <!-- ======= Footer ======= -->
-        <footer id="footer">
-            <div class="container">
-                <div class="copyright">
-                    <p>Nicolas "AiGash" Florentino - 2021</p>
-                </div>
-                <div class="credits">
-
-                </div>
-            </div>
-        </footer><!-- End  Footer -->
-
-    </header><!-- End Header -->
+      </div>
+    </nav>
 
     <main id="main">
-        <div id='avana-roca' class="portfoElement">
-            <section class="breadcrumbs">
-                <div class="container">
+      <div id='agence406' class="portfoElement">
+        <section class="breadcrumbs">
+          <div class="container">
 
-                    <div class="section-title p-0">
-                        <h2>Avana Roca</h2>
-                    </div>
+            <div class="section-title title-left p-0">
+              <h2>Agence 406</h2>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class="col-lg-9">
+                <div>
+                  <a href="assets/img/agence406/agence406.jpg" class="venobox"><img src="assets/img/agence406/agence406.jpg" class="img-fluid galerimg" alt=""></a>
                 </div>
-            </section>
-
-            <section class="portfolio-details">
-                <div class="container">
-                    <div class="carousel-head row">
-                        <div class="col-lg-9">
-                            <div>
-                                <a href="assets/img/avana-roca/details1.jpg" class="venobox"><img
-                                        src="assets/img/avana-roca/details1.jpg" class="img-fluid galerimg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="portfolio-info shadow">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet personnel</li>
-                                    <li><strong>Technologies</strong>: WordPress, PHP</li>
-                                    <li><strong>Date</strong>: 20 Mai, 2022</li>
-                                    <li><strong>URL</strong>: <a href="https://dev-avana-roca.pantheonsite.io/"
-                                            target="_blank">Avana Roca</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galerie row">
-                        <div class="col-lg-3">
-                            <a href="assets/img/avana-roca/details2.jpg" class="venobox"><img
-                                    src="assets/img/avana-roca/details2.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/avana-roca/details3.jpg" class="venobox"><img
-                                    src="assets/img/avana-roca/details3.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/avana-roca/details4.jpg" class="venobox"><img
-                                    src="assets/img/avana-roca/details4.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/avana-roca/details5.jpg" class="venobox"><img
-                                    src="assets/img/avana-roca/details5.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-3 d-block d-lg-none">
-                            <div class="portfolio-info">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet personnel</li>
-                                    <li><strong>Outils/Langages</strong>: WordPress, PHP</li>
-                                    <li><strong>Date</strong>: 20 Mai, 2022</li>
-                                    <li><strong>URL</strong>: <a href="https://dev-avana-roca.pantheonsite.io/"
-                                            target="_blank">Avana Roca</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-description">
-                        <h3>Avana Roca, qu'est-ce que c'est ?</h3>
-                        <h4>Contexte</h4>
-                        <p>
-                            Avana Roca est un projet personnel de création de site web avec le CMS WordPress. Le but derrière ce projet était de m'améliorer personnellement que ce soit en Webdesign et sur l'utilisation de WordPress.
-                        </p>
-                        <h4>Fonctionnalités</h4>
-                        <p>Avana Roca est un site présentant des robes de mariées de diverses marques connues. L'utilisateur peut prendre rendez-vous afin de commander une robe existante à sa taille ou d'en faire faire une sur-mesure.
-                        </p>
-                    </div>
-
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet professionnel</li>
+                    <li>
+                      <strong>Technologies</strong>: WordPress, PHP</li>
+                    <li>
+                      <strong>Date</strong>: 15 Novembre, 2022</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://agence406.com/" target="_blank">Agence 406</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
-        </div>
+              </div>
+            </div>
+            <div class="galerie row">
+              <div class="col-lg-3">
+                <a href="assets/img/agence406/details1.jpg" class="venobox"><img src="assets/img/agence406/details1.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/agence406/details2.jpg" class="venobox"><img src="assets/img/agence406/details2.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/agence406/details3.jpg" class="venobox"><img src="assets/img/agence406/details3.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/agence406/details4.jpg" class="venobox"><img src="assets/img/agence406/details4.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
 
-        <div id='weakside' class="portfoElement">
-            <section class="breadcrumbs">
-                <div class="container">
-
-                    <div class="section-title p-0">
-                        <h2>Weakside</h2>
-                    </div>
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet professionnel</li>
+                    <li>
+                      <strong>Outils/Langages</strong>: WordPress, PHP</li>
+                    <li>
+                      <strong>Date</strong>: 15 Novembre, 2022</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://agence406.com/" target="_blank">Agence 406</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
+            </div>
+            <div class="portfolio-description">
+              <h3>Agence 406, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                Agence 406 est un projet professionnel de création de site web avec le CMS WordPress.
+              </p>
+              <h4>Fonctionnalités</h4>
+              <p>Avana Roca est un site présentant des robes de mariées de diverses marques connues. L'utilisateur peut prendre rendez-vous afin de commander une robe existante à sa taille ou d'en faire faire une sur-mesure.
+              </p>
+            </div>
 
-            <section class="portfolio-details">
-                <div class="container">
-                    <div class="carousel-head row">
-                        <div class="col-lg-9">
-                            <div>
-                                <a href="assets/img/weakside/weaksideSF1.jpg" class="venobox"><img
-                                        src="assets/img/weakside/weaksideSF1.jpg" class="img-fluid galerimg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="portfolio-info shadow">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet personnel</li>
-                                    <li><strong>Technologies</strong>: PHP, MySQL, Symfony, JS, jQuery</li>
-                                    <li><strong>Date</strong>: 18 Avril, 2021</li>
-                                    <li><strong>URL</strong>: <a href="https://weakside.fr/"
-                                            target="_blank">Weakside.fr</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galerie row">
-                        <div class="col-lg-3">
-                            <a href="assets/img/weakside/weaksideSF2.jpg" class="venobox"><img
-                                    src="assets/img/weakside/weaksideSF2.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/weakside/weaksideSF3.jpg" class="venobox"><img
-                                    src="assets/img/weakside/weaksideSF3.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/weakside/weaksideSF4.jpg" class="venobox"><img
-                                    src="assets/img/weakside/weaksideSF4.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/weakside/weaksideSF5.jpg" class="venobox"><img
-                                    src="assets/img/weakside/weaksideSF5.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
+          </div>
+        </section>
+      </div>
 
-                        <div class="col-lg-3 d-block d-lg-none">
-                            <div class="portfolio-info">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet personnel</li>
-                                    <li><strong>Outils/Langages</strong>: PHP, MySQL, Symfony, JS, jQuery</li>
-                                    <li><strong>Date</strong>: 18 Avril, 2021</li>
-                                    <li><strong>URL</strong>: <a href="https://weakside.fr/"
-                                            target="_blank">Weakside.fr</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-description">
-                        <h3>Weakside, qu'est-ce que c'est ?</h3>
-                        <h4>Contexte</h4>
-                        <p>
-                            Weakside est un projet personnel que j'ai initié en parallèle de ma formation de développeur
-                            web
-                            full-stack, afin d'approfondir mes connaissances en back-end, l'objectif étant de mettre en
-                            place une
-                            base de données MySQL et de créer un site web dynamique en PHP pour l'exploiter. J'ai été
-                            rejoint par
-                            <a href="https://lorenzoaper.github.io/portfolio/">Lorenzo Panizza</a> (issu de la même
-                            formation), qui s'est
-                            principalement consacré à la partie graphique du site, approfondissant de son côté ses
-                            compétences
-                            front-end.<br>
-                            Tous les deux joueurs de League of Legends, nous avons été d'autant plus motivés à
-                            développer le
-                            projet au delà de nos attentes initiales. Il nous sert aujourd'hui à la fois de crash test,
-                            pour mettre
-                            en pratique et nous approprier nos nouvelles compétences, mais également de vitrine pour
-                            notre
-                            savoir-faire.
-                        </p>
-                        <h4>Fonctionnalités</h4>
-                        <p>- Apporter une aide aux joueurs novices du haut de la carte (top lane) sur LOL, afin
-                            d'apprendre plus
-                            simplement leurs affrontements (matchups) et progresser dans le jeu. <br><br>
-                            - Classer les affrontements par difficulté en sélectionnant le champion affronté, afin
-                            d'orienter
-                            le joueur dans le choix de son personnage. <br><br>
-                            - Mettre à disposition divers Guides sur certains champions ainsi que sur le jeu en général.
-                        </p>
-                    </div>
+      <div id='avana-roca' class="portfoElement">
+        <section class="breadcrumbs">
+          <div class="container">
 
+            <div class="section-title title-left p-0">
+              <h2>Avana Roca</h2>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class="col-lg-9">
+                <div>
+                  <a href="assets/img/avana-roca/details1.jpg" class="venobox"><img src="assets/img/avana-roca/details1.jpg" class="img-fluid galerimg" alt=""></a>
                 </div>
-            </section>
-        </div>
-
-        <div class="portfoElement">
-            <section class="breadcrumbs">
-                <div class="container">
-                    <div class="section-title p-0">
-                        <h2>Project R</h2>
-                    </div>
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet personnel</li>
+                    <li>
+                      <strong>Technologies</strong>: WordPress, PHP</li>
+                    <li>
+                      <strong>Date</strong>: 20 Mai, 2022</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://dev-avana-roca.pantheonsite.io/" target="_blank">Avana Roca</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
+            </div>
+            <div class="galerie row">
+              <div class="col-lg-3">
+                <a href="assets/img/avana-roca/details2.jpg" class="venobox"><img src="assets/img/avana-roca/details2.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/avana-roca/details3.jpg" class="venobox"><img src="assets/img/avana-roca/details3.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/avana-roca/details4.jpg" class="venobox"><img src="assets/img/avana-roca/details4.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/avana-roca/details5.jpg" class="venobox"><img src="assets/img/avana-roca/details5.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
 
-            <section class="portfolio-details">
-                <div class="container">
-                    <div class="carousel-head row">
-                        <div class="col-lg-9">
-                            <div>
-                                <a href="assets/img/projectr/details1.jpg" class="venobox"><img
-                                        src="assets/img/projectr/details1.jpg" class="img-fluid galerimg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="portfolio-info shadow">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Jeu vidéo</li>
-                                    <li><strong>Type</strong>: Projet d'études</li>
-                                    <li><strong>Technologies</strong>: JS, Phaser 3</li>
-                                    <li><strong>Date</strong>: 10 Juin, 2021</li>
-                                    <li><strong>URL</strong>: <a href="https://damp-ravine-01394.herokuapp.com/"
-                                            target="_blank">Project R</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galerie row">
-                        <div class="col-lg-3">
-                            <a href="assets/img/projectr/details2.jpg" class="venobox"><img
-                                    src="assets/img/projectr/details2.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/projectr/details3.jpg" class="venobox"><img
-                                    src="assets/img/projectr/details3.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/projectr/details4.jpg" class="venobox"><img
-                                    src="assets/img/projectr/details4.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/projectr/details5.jpg" class="venobox"><img
-                                    src="assets/img/projectr/details5.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-3 d-block d-lg-none">
-                            <div class="portfolio-info">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Jeu vidéo</li>
-                                    <li><strong>Type</strong>: Projet d'études</li>
-                                    <li><strong>Technologies</strong>: JS, Phaser 3</li>
-                                    <li><strong>Date</strong>: 10 Juin, 2021</li>
-                                    <li><strong>URL</strong>: <a href="https://damp-ravine-01394.herokuapp.com/"
-                                            target="_blank">Project R</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-description">
-                        <h3>Project R, qu'est-ce que c'est ?</h3>
-                        <h4>Contexte</h4>
-                        <p>
-                            Project R est un projet de création de jeu vidéo réalisé en groupe de 5 dans le cadre de
-                            notre formation de développeur web. Le but était assez libre, nous avons choisi de faire un
-                            jeu en JS à l'aide de la librairie Phaser 3.
-                        </p>
-                        <h4>Fonctionnalités</h4>
-                        <p>Project R est un jeu sans fin où le joueur contrôle un personnage (Eriku) et doit, à l'aide
-                            de la touche espace pour sauter et flèche du bas pour se baisser, tuer les ennemis (qui sont
-                            des référence à la culture pop et web) qui passent. Si le joueur laisse passer un ennemi
-                            sans le tuer il perd alors une vie, s'il perd 3 vies, il perd la partie.</p>
-                    </div>
-
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet personnel</li>
+                    <li>
+                      <strong>Outils/Langages</strong>: WordPress, PHP</li>
+                    <li>
+                      <strong>Date</strong>: 20 Mai, 2022</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://dev-avana-roca.pantheonsite.io/" target="_blank">Avana Roca</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
-        </div>
+              </div>
+            </div>
+            <div class="portfolio-description">
+              <h3>Avana Roca, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                Avana Roca est un projet personnel de création de site web avec le CMS WordPress. Le but derrière ce projet était de m'améliorer personnellement que ce soit en Webdesign et sur l'utilisation de WordPress.
+              </p>
+              <h4>Fonctionnalités</h4>
+              <p>Avana Roca est un site présentant des robes de mariées de diverses marques connues. L'utilisateur peut prendre rendez-vous afin de commander une robe existante à sa taille ou d'en faire faire une sur-mesure.
+              </p>
+            </div>
 
-        <div class="portfoElement">
-            <section class="breadcrumbs">
-                <div class="container">
-                    <div class="section-title p-0">
-                        <h2>Animafriends</h2>
-                    </div>
+          </div>
+        </section>
+      </div>
+
+      <div id='weakside' class="portfoElement">
+        <section class="breadcrumbs">
+          <div class="container">
+
+            <div class="section-title title-left p-0">
+              <h2>Weakside</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class="col-lg-9">
+                <div>
+                  <a href="assets/img/weakside/weaksideSF1.jpg" class="venobox"><img src="assets/img/weakside/weaksideSF1.jpg" class="img-fluid galerimg" alt=""></a>
                 </div>
-            </section>
-
-            <section class="portfolio-details">
-                <div class="container">
-                    <div class="carousel-head row">
-                        <div class="col-lg-9">
-                            <div>
-                                <a href="assets/img/animafriends/details0.jpg" class="venobox"><img
-                                        src="assets/img/animafriends/details0.jpg" class="img-fluid galerimg"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="portfolio-info shadow">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet d'études</li>
-                                    <li><strong>Outils/Langages</strong>: Figma, Wordpress</li>
-                                    <li><strong>Date</strong>: 26 Février, 2021</li>
-                                    <li><strong>URL</strong>: <a href="https://dev-animafriends.pantheonsite.io/"
-                                            target="_blank">Animafriends</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galerie row">
-                        <div class="col-lg-3">
-                            <a href="assets/img/animafriends/details1.jpg" class="venobox"><img
-                                    src="assets/img/animafriends/details1.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/animafriends/details2.jpg" class="venobox"><img
-                                    src="assets/img/animafriends/details2.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/animafriends/details3.jpg" class="venobox"><img
-                                    src="assets/img/animafriends/details3.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/animafriends/details4.jpg" class="venobox"><img
-                                    src="assets/img/animafriends/details4.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-3 d-block d-lg-none">
-                            <div class="portfolio-info">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet d'études</li>
-                                    <li><strong>Technologies</strong>: Figma, Wordpress</li>
-                                    <li><strong>Date</strong>: 26 Février, 2021</li>
-                                    <li><strong>URL</strong>: <a href="https://dev-animafriends.pantheonsite.io/"
-                                            target="_blank">Animafriends</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-description">
-                        <h3>Animafriends, qu'est-ce que c'est ?</h3>
-                        <h4>Contexte</h4>
-                        <p>
-                            Animafriends est un projet UX/UI de design d'application et de création de landing page
-                            réalisé dans le
-                            cadre de ma formation de développeur web full-stack. Le but était de maquetter une
-                            application mobile sur Figma et de réaliser sa landing page à l'aide du
-                            CMS WordPress.
-                        </p>
-                        <h4>Fonctionnalités</h4>
-                        <p>Animafriends est une application de partage de connaissances sur diverses races de chiens.
-                            Les
-                            utilisateurs
-                            ont la possibilité de créer un journal de bord sur leur chiens ou de consulter ceux d'un
-                            autre. S'ils le
-                            souhaitent ils ont la possibilité de se contacter entre eux afin de partager plus en
-                            détails.</p>
-                    </div>
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet personnel</li>
+                    <li>
+                      <strong>Technologies</strong>: PHP, MySQL, Symfony, JS, jQuery</li>
+                    <li>
+                      <strong>Date</strong>: 18 Avril, 2021</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://weakside.fr/" target="_blank">Weakside.fr</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
-        </div>
+              </div>
+            </div>
+            <div class="galerie row">
+              <div class="col-lg-3">
+                <a href="assets/img/weakside/weaksideSF2.jpg" class="venobox"><img src="assets/img/weakside/weaksideSF2.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/weakside/weaksideSF3.jpg" class="venobox"><img src="assets/img/weakside/weaksideSF3.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/weakside/weaksideSF4.jpg" class="venobox"><img src="assets/img/weakside/weaksideSF4.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/weakside/weaksideSF5.jpg" class="venobox"><img src="assets/img/weakside/weaksideSF5.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
 
-        <div class="portfoElement">
-            <section class="breadcrumbs">
-                <div class="container">
-                    <div class="section-title p-0">
-                        <h2>Afélis</h2>
-                    </div>
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet personnel</li>
+                    <li>
+                      <strong>Outils/Langages</strong>: PHP, MySQL, Symfony, JS, jQuery</li>
+                    <li>
+                      <strong>Date</strong>: 18 Avril, 2021</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://weakside.fr/" target="_blank">Weakside.fr</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
+            </div>
+            <div class="portfolio-description">
+              <h3>Weakside, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                Weakside est un projet personnel que j'ai initié en parallèle de ma formation de développeur web full-stack, afin d'approfondir mes connaissances en back-end, l'objectif étant de mettre en place une base de données MySQL et de créer un site web dynamique en PHP pour l'exploiter. J'ai été rejoint par
+                <a href="https://lorenzoaper.github.io/portfolio/">Lorenzo Panizza</a>
+                (issu de la même formation), qui s'est principalement consacré à la partie graphique du site, approfondissant de son côté ses compétences front-end.<br>
+                Tous les deux joueurs de League of Legends, nous avons été d'autant plus motivés à développer le projet au delà de nos attentes initiales. Il nous sert aujourd'hui à la fois de crash test, pour mettre en pratique et nous approprier nos nouvelles compétences, mais également de vitrine pour notre savoir-faire.
+              </p>
+              <h4>Fonctionnalités</h4>
+              <p>- Apporter une aide aux joueurs novices du haut de la carte (top lane) sur LOL, afin d'apprendre plus simplement leurs affrontements (matchups) et progresser dans le jeu.
+                <br><br>
+                - Classer les affrontements par difficulté en sélectionnant le champion affronté, afin d'orienter le joueur dans le choix de son personnage.
+                <br><br>
+                - Mettre à disposition divers Guides sur certains champions ainsi que sur le jeu en général.
+              </p>
+            </div>
 
-            <section class="portfolio-details">
-                <div class="container">
-                    <div class="carousel-head row">
-                        <div class="col-lg-9">
-                            <div>
-                                <a href="assets/img/Afelis/details1.jpg" class="venobox"><img
-                                        src="assets/img/Afelis/details1.jpg" class="img-fluid galerimg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="portfolio-info shadow">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet d'études</li>
-                                    <li><strong>Technologies</strong>: HTML, CSS</li>
-                                    <li><strong>Date</strong>: 01 Décembre, 2020</li>
-                                    <li><strong>URL</strong>: <a href="https://aigash.github.io/ecommerce-aigash/"
-                                            target="_blank">Afélis</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galerie row">
-                        <div class="col-lg-3">
-                            <a href="assets/img/Afelis/details2.jpg" class="venobox"><img
-                                    src="assets/img/Afelis/details2.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/Afelis/details3.jpg" class="venobox"><img
-                                    src="assets/img/Afelis/details3.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/Afelis/details4.jpg" class="venobox"><img
-                                    src="assets/img/Afelis/details4.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
-                        <div class="col-lg-3">
-                            <a href="assets/img/Afelis/details5.jpg" class="venobox"><img
-                                    src="assets/img/Afelis/details5.jpg" class="img-fluid galerimg" alt=""></a>
-                        </div>
+          </div>
+        </section>
+      </div>
 
-                        <div class="col-lg-3 d-block d-lg-none">
-                            <div class="portfolio-info">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Site web</li>
-                                    <li><strong>Type</strong>: Projet d'études</li>
-                                    <li><strong>Outils/Langages</strong>: HTML, CSS</li>
-                                    <li><strong>Date</strong>: 01 Décembre, 2020</li>
-                                    <li><strong>URL</strong>: <a href="https://aigash.github.io/ecommerce-aigash/"
-                                            target="_blank">Afélis</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+      <div class="portfoElement">
+        <section class="breadcrumbs">
+          <div class="container">
+            <div class="section-title title-left p-0">
+              <h2>Project R</h2>
+            </div>
+          </div>
+        </section>
 
-                    <div class="portfolio-description">
-                        <h3>Afélis, qu'est-ce que c'est ?</h3>
-                        <h4>Contexte</h4>
-                        <p>
-                            Afélis est un projet de landing page de site e-commerce réalisé au début de ma formation de
-                            développeur
-                            web
-                            full-stack. Les contraintes de réalisation étaient de n'utiliser que du HTML et du CSS.
-                        </p>
-                        <h4>Fonctionnalités</h4>
-                        <p>Étant un projet fictif e-commerce la fonctionnalité principale du cahier des charges était la
-                            vente de divers produits pour
-                            chats.</p>
-                    </div>
-
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class="col-lg-9">
+                <div>
+                  <a href="assets/img/projectr/details1.jpg" class="venobox"><img src="assets/img/projectr/details1.jpg" class="img-fluid galerimg" alt=""></a>
                 </div>
-            </section>
-        </div>
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Jeu vidéo</li>
+                    <li>
+                      <strong>Type</strong>: Projet d'études</li>
+                    <li>
+                      <strong>Technologies</strong>: JS, Phaser 3</li>
+                    <li>
+                      <strong>Date</strong>: 10 Juin, 2021</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://damp-ravine-01394.herokuapp.com/" target="_blank">Project R</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="galerie row">
+              <div class="col-lg-3">
+                <a href="assets/img/projectr/details2.jpg" class="venobox"><img src="assets/img/projectr/details2.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/projectr/details3.jpg" class="venobox"><img src="assets/img/projectr/details3.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/projectr/details4.jpg" class="venobox"><img src="assets/img/projectr/details4.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/projectr/details5.jpg" class="venobox"><img src="assets/img/projectr/details5.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Jeu vidéo</li>
+                    <li>
+                      <strong>Type</strong>: Projet d'études</li>
+                    <li>
+                      <strong>Technologies</strong>: JS, Phaser 3</li>
+                    <li>
+                      <strong>Date</strong>: 10 Juin, 2021</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://damp-ravine-01394.herokuapp.com/" target="_blank">Project R</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-description">
+              <h3>Project R, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                Project R est un projet de création de jeu vidéo réalisé en groupe de 5 dans le cadre de notre formation de développeur web. Le but était assez libre, nous avons choisi de faire un jeu en JS à l'aide de la librairie Phaser 3.
+              </p>
+              <h4>Fonctionnalités</h4>
+              <p>Project R est un jeu sans fin où le joueur contrôle un personnage (Eriku) et doit, à l'aide de la touche espace pour sauter et flèche du bas pour se baisser, tuer les ennemis (qui sont des référence à la culture pop et web) qui passent. Si le joueur laisse passer un ennemi sans le tuer il perd alors une vie, s'il perd 3 vies, il perd la partie.</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+      <div class="portfoElement">
+        <section class="breadcrumbs">
+          <div class="container">
+            <div class="section-title title-left p-0">
+              <h2>Animafriends</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class="col-lg-9">
+                <div>
+                  <a href="assets/img/animafriends/details0.jpg" class="venobox"><img src="assets/img/animafriends/details0.jpg" class="img-fluid galerimg" alt=""></a>
+                </div>
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet d'études</li>
+                    <li>
+                      <strong>Outils/Langages</strong>: Figma, Wordpress</li>
+                    <li>
+                      <strong>Date</strong>: 26 Février, 2021</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://dev-animafriends.pantheonsite.io/" target="_blank">Animafriends</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="galerie row">
+              <div class="col-lg-3">
+                <a href="assets/img/animafriends/details1.jpg" class="venobox"><img src="assets/img/animafriends/details1.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/animafriends/details2.jpg" class="venobox"><img src="assets/img/animafriends/details2.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/animafriends/details3.jpg" class="venobox"><img src="assets/img/animafriends/details3.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/animafriends/details4.jpg" class="venobox"><img src="assets/img/animafriends/details4.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet d'études</li>
+                    <li>
+                      <strong>Technologies</strong>: Figma, Wordpress</li>
+                    <li>
+                      <strong>Date</strong>: 26 Février, 2021</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://dev-animafriends.pantheonsite.io/" target="_blank">Animafriends</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-description">
+              <h3>Animafriends, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                Animafriends est un projet UX/UI de design d'application et de création de landing page réalisé dans le cadre de ma formation de développeur web full-stack. Le but était de maquetter une application mobile sur Figma et de réaliser sa landing page à l'aide du CMS WordPress.
+              </p>
+              <h4>Fonctionnalités</h4>
+              <p>Animafriends est une application de partage de connaissances sur diverses races de chiens. Les utilisateurs ont la possibilité de créer un journal de bord sur leur chiens ou de consulter ceux d'un autre. S'ils le souhaitent ils ont la possibilité de se contacter entre eux afin de partager plus en détails.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="portfoElement">
+        <section class="breadcrumbs">
+          <div class="container">
+            <div class="section-title title-left p-0">
+              <h2>Afélis</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class="col-lg-9">
+                <div>
+                  <a href="assets/img/Afelis/details1.jpg" class="venobox"><img src="assets/img/Afelis/details1.jpg" class="img-fluid galerimg" alt=""></a>
+                </div>
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet d'études</li>
+                    <li>
+                      <strong>Technologies</strong>: HTML, CSS</li>
+                    <li>
+                      <strong>Date</strong>: 01 Décembre, 2020</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://aigash.github.io/ecommerce-aigash/" target="_blank">Afélis</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="galerie row">
+              <div class="col-lg-3">
+                <a href="assets/img/Afelis/details2.jpg" class="venobox"><img src="assets/img/Afelis/details2.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/Afelis/details3.jpg" class="venobox"><img src="assets/img/Afelis/details3.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/Afelis/details4.jpg" class="venobox"><img src="assets/img/Afelis/details4.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+              <div class="col-lg-3">
+                <a href="assets/img/Afelis/details5.jpg" class="venobox"><img src="assets/img/Afelis/details5.jpg" class="img-fluid galerimg" alt=""></a>
+              </div>
+
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Site web</li>
+                    <li>
+                      <strong>Type</strong>: Projet d'études</li>
+                    <li>
+                      <strong>Outils/Langages</strong>: HTML, CSS</li>
+                    <li>
+                      <strong>Date</strong>: 01 Décembre, 2020</li>
+                    <li>
+                      <strong>URL</strong>:
+                      <a href="https://aigash.github.io/ecommerce-aigash/" target="_blank">Afélis</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-description">
+              <h3>Afélis, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                Afélis est un projet de landing page de site e-commerce réalisé au début de ma formation de développeur web full-stack. Les contraintes de réalisation étaient de n'utiliser que du HTML et du CSS.
+              </p>
+              <h4>Fonctionnalités</h4>
+              <p>Étant un projet fictif e-commerce la fonctionnalité principale du cahier des charges était la vente de divers produits pour chats.</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
     </main>
 
     <a href="#" class="back-to-top"><img class="shadow" src="assets/img/stylish-up.png" alt=""></a>
@@ -552,4 +614,4 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>

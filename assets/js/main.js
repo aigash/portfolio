@@ -1,30 +1,6 @@
 !(function($) {
   "use strict";
 
-  // Navigation
-  let header = document.getElementById('header');
-  let btnMenu = document.getElementById('btnMenu');
-  let hideMenu = document.getElementById('hideMenu');
-  let delay;
-  let delay2;
-
-  if (header.style.display = "none") {
-    btnMenu.addEventListener('click', function (e) {
-        header.style.display = "block"
-        header.style.animation = "0.8s ease move_menu";
-    });
-  }
-  if (header.style.display = "true") {
-      hideMenu.addEventListener('click', function (e) {
-          header.style.animation = "0.8s ease hide_menu";
-          delay = setTimeout(hideMenuNav, 800);
-      });
-  }
-
-  function hideMenuNav() {
-    header.style.display = "none";
-  }
-
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on('click', '.nav-menu a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -157,6 +133,51 @@
     });
   });
 
+  // TABS
+  const mainTabs = document.querySelector(".main-tabs");
+  const mainSliderCircle = document.querySelector(".main-slider-circle");
+  const roundButtons = document.querySelectorAll(".round-button");
+  const filterTabs = document.querySelector(".filter-tabs");
+  const filterButtons = document.querySelectorAll(".filter-button");
+
+  const handleActiveTab = (tabs, event, className) => {
+    tabs.forEach((tab) => {
+      tab.classList.remove(className);
+    });
+  
+    if (!event.target.classList.contains(className)) {
+      event.target.classList.add(className);
+    }
+  };
+  // parcours tabs
+  if (mainTabs) {
+    mainTabs.addEventListener("click", (event) => {
+      const root = document.documentElement;
+      const targetTranslateValue = event.target.dataset.translateValue;
+    
+      if (event.target.classList.contains("round-button")) {
+        mainSliderCircle.classList.remove("animate-jello");
+        void mainSliderCircle.offsetWidth;
+        mainSliderCircle.classList.add("animate-jello");
+    
+        root.style.setProperty("--translate-main-slider", targetTranslateValue);
+    
+        handleActiveTab(roundButtons, event, "active");
+      }
+    });
+    // skills tabs    
+    filterTabs.addEventListener("click", (event) => {
+      const root = document.documentElement;
+      const targetTranslateValue = event.target.dataset.translateValue;
+    
+      if (event.target.classList.contains("filter-button")) {
+        root.style.setProperty("--translate-filters-slider", targetTranslateValue);
+        handleActiveTab(filterButtons, event, "filter-active");
+      }
+    });
+  }
+  // FIN TABS
+
   //carousel
   $(document).ready(function(){
     $(".carousel1").owlCarousel({
@@ -194,13 +215,21 @@
       autoplay:false,
       loop:false,
       items:1,
+      dots:false,
+      autoHeight:true,
       URLhashListener:true,
       startPosition: 'URLHash'
     });
 
-    $("#tel-contact").click(function() {
-      $('#box-tel').css('display', 'flex');
-    })
+    $(".carouselSkills").owlCarousel({
+      autoplay:false,
+      loop:false,
+      items:1,
+      dots:false,
+      autoHeight:true,
+      URLhashListener:true,
+      startPosition: 'URLHash'
+    });
 
   });
 

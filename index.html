@@ -1,564 +1,565 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nicolas Florentino Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Nicolas Florentino Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <button id='btnMenu' type='button'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi" fill="currentColor" viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-      </path>
-    </svg>
-  </button>
-  <!-- ======= Header ======= -->
-  <header id="header">
+    <nav id='main-menu' class="navbar navbar-expand-lg">
+      <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi" fill="currentColor" viewbox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+            </svg>
+          </span>
+        </button>
 
-    <div id='hideMenu'>
-      <img src='assets/img/back.svg'>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#hero">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Projets
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="projets-web.html">Web</a>
+                <a class="dropdown-item" href="projets-graphiques.html">Graphiques</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#exp-formation">Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <a href="#hero">
-          <img src="assets/img/logoNF.png" alt="" class="img-fluid">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center position-relative">
+      <div id='hero-social' class='d-flex flex-column position-absolute'>
+        <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin">
+          <i class="bx bxl-linkedin"></i>
         </a>
-        <div class="social-links mt-3 text-center">
-          <!--<a href="https://www.instagram.com/nico_aigash/?hl=fr" target="_blank" class="instagram"><i
-              class="bx bxl-instagram"></i></a>-->
-          <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/aigash" target="_blank" class="github"><i class='bx bxl-github'></i></a>
+        <a href="https://github.com/aigash" target="_blank" class="github">
+          <i class='bx bxl-github'></i>
+        </a>
+      </div>
+      <div id="hero-cadre">
+        <div class="hero-container" data-aos="fade-in">
+          <h1>NICOLAS<br>FLORENTINO</h1>
+          <p>
+            <span>Développeur, Designer web</span></p>
         </div>
       </div>
-
-      <nav class="nav-menu">
-        <ul>
-          <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-          <li><a href="projets-web.html"><i class="bx bx-book-content"></i>Projets web</a></li>
-          <li><a href="projets-graphiques.html"><i class="bx bx-book-content"></i>Projets graphiques</a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>À propos</span></a></li>
-          <li><a href="#exp-formation"><i class="bx bx-file-blank"></i> <span>Parcours</span></a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i>Contact</a></li>
-
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          <p>Nicolas "AiGash" Florentino - 2021</p>
-        </div>
-        <div class="credits">
-
-        </div>
-      </div>
-    </footer><!-- End  Footer -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center position-relative">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Nicolas Florentino</h1>
-      <p><span>Web designer / développeur</span></p>
-    </div>
-    <div class="position-absolute d-flex flex-column align-items-center mx-auto" id="cta-hero">
-      <a href="#about" class="scrollto">Accéder au CV</a>
-      <i class=' text-white bx bx-chevron-down'></i>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>À propos</h2>
-          <div class='d-flex'>
-            <div>
-              <img src='assets/img/moi.jfif'>
-              <p><b>&Acirc;ge</b> : 26 ans (05/08/1995)</p>
-              <p><b>Localisation</b> : Marseille</p>
-            </div>
-            <div>
-              <p>Passionné par le dessin que je pratique depuis petit, j'ai décidé d'y consacrer mes études à la sortie du
-                bac. Mes années de BTS Design Graphique ont éveillé en moi un attrait pour le développement web et c'est
-                la raison pour laquelle j'ai voulu compléter mon profil en me dirigeant vers une formation de développeur.
-                Par ailleurs, c'est en réalisant divers projets web lors de cette formation et en entreprise que j'ai pu
-                confirmer cet équilibre professionnel design / développement dans lequel je projette complètement mon
-                avenir.
-                <br><br>
-                Ma curiosité m'a toujours poussé à vouloir en découvrir davantage dans un domaine comme dans l'autre,
-                c'est pourquoi je l'ai souvent exprimé à travers des projets personnels dans lesquels je me suis donné à
-                fond pour compléter ma formation durant et en dehors de mes études.
-              </p>
-              <a id='btn-CV' href='assets/cv.pdf' target="_blank">Télécharger mon CV</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Compétences</h2>
-        </div>
-
-        <div class="row skills-content px-3">
-
-          <div class="col-lg px-0" data-aos="fade-up">
-            <div class="d-flex skills-bloc">
-              <div class="">
-                <div>
-                  <h4>FRONT END</h4>
-                </div>
-                <ul>
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/html.svg" alt="">HTML</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/css.svg" alt="">CSS</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/bootstrap.svg" alt="">Bootstrap</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/javascript.svg" alt="">JavaScript</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/jquery.png" height="48" alt="">jQuery</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div>
-                  <h4>BACK END</h4>
-                </div>
-                <ul>
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/php.svg" width="48" alt=""
-                        style="padding:3px;">PHP</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/mysql.svg" alt="" height="48"
-                        style="padding:4px;">MySQL</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/symfony.svg" alt="" height="48"
-                        style="padding:6px;">Symfony</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div>
-                  <h4>OUTILS / CMS</h4>
-                </div>
-                <ul>
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/Octocat.png" width="48" alt=""
-                        style="padding:1px;">GitHub</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/wordpress.svg" alt="">WordPress</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/prestashop.png" alt="">PrestaShop</span>
-                  </li>
-                </ul>
-              </div>
-         
-              <div class="">
-                <div>
-                  <h4>DESIGN</h4>
-                </div>
-                <ul>
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/figma.svg" height="48"
-                        style="padding:6px;" alt="">Figma</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/photoshop.svg" alt="">Photoshop</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/illustrator.svg" height="48"
-                        alt="">Illustrator</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/indesign.svg" alt="">InDesign</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/adobexd.svg" alt="">Adobe Xd</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div>
-                  <h4>SOFT SKILLS</h4>
-                </div>
-                <ul>
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/curiosite.png" height="48"
-                        alt="">Curiosité</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/creativite.png" alt="">Créativité</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/adaptabilite.png" height="48"
-                        alt="">Adaptabilité</span>
-                  </li>
-
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/teamwork.png" height="48" alt="">Teamwork</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="">
-                <div>
-                  <h4>LANGUES</h4>
-                </div>
-                <ul>
-                  <li class="progress">
-                    <span class="skill"><img src="assets/img/icones/anglais.png" height="48" width="48"
-                        style="padding:6px;" alt="">B1</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-        </div>
-
-        <div class="w-100" data-aos="fade-up" data-aos-delay="100">
-          <div class='d-flex justify-content-between portfo-bloc'>
-            <a class='link-portfo' href='projets-web.html'>
-              <div class='portfolio-cat d-flex' id='portfolio-web'>
-                <div>
-                  <h4>PROJETS WEB</h4>
-                  <p>- Création d'éléments graphiques<br>- Maquettes sites internet</p>
-                </div>
-                <div>
-                  <p>Accéder</p>
-                </div>
-                <div class='portfo-filter'></div>
-              </div>
-            </a>
-
-            <a class='link-portfo' href='projets-graphiques.html'>
-              <div class='portfolio-cat d-flex' id='portfolio-graphique'>
-                <div>
-                  <h4>PROJETS GRAPHIQUES</h4>
-                  <p>- Création de sites internet sous diverses technologies<br>- Création de jeux-vidéos</p>
-                </div>
-                <div>
-                  <p>Accéder</p>
-                </div>
-                <div class='portfo-filter'></div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
+      <div class="position-absolute d-flex flex-column align-items-center mx-auto" id="cta-hero">
+        <a href="#about" class="scrollto">Accéder au CV</a>
+        <i class=' text-white bx bx-chevron-down'></i>
       </div>
     </section>
-    <!-- End Portfolio Section -->
+    <!-- End Hero -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id='exp-formation'>
-      <div class='container'>
-        <div class="section-title">
-          <h2>Parcours</h2>
+    <main id="main">
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+
+          <div class="section-title title-left">
+            <h2>À propos</h2>
+          </div>
+          <div class='section-content'>
+            <div class='d-flex'>
+              <div>
+                <img src='assets/img/moi.jfif'>
+              </div>
+              <div>
+                <p>Passionné par le dessin que je pratique depuis petit, j'ai décidé d'y consacrer mes études à la sortie du bac. Mes années de BTS Design Graphique ont éveillé en moi un attrait pour le développement web et c'est la raison pour laquelle j'ai voulu compléter mon profil en me dirigeant vers une formation de développeur. Par ailleurs, c'est en réalisant divers projets web lors de cette formation et en entreprise que j'ai pu confirmer cet équilibre professionnel design / développement dans lequel je projette complètement mon avenir.
+                  <br><br>
+                  Ma curiosité m'a toujours poussé à vouloir en découvrir davantage dans un domaine comme dans l'autre, c'est pourquoi je l'ai souvent exprimé à travers des projets personnels dans lesquels je me suis donné à fond pour compléter ma formation durant et en dehors de mes études.
+                </p>
+                <a id='btn-CV' href='assets/cv.pdf' target="_blank">Télécharger mon CV</a>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </section>
+      <!-- End About Section -->
 
-        <div class='d-flex nav-parcours'>
-          <a href='#2022' class='d-flex'><p class='button-url' href='#2022'>2022</p></a>
-          <a href='#2021' class='d-flex'><p class='button-url' href='#2021'>2021</p></a>
-          <a href='#2019' class='d-flex'><p class='button-url' href='#2019'>2019</p></a>
-          <a href='#2018' class='d-flex'><p class='button-url' href='#2018'>2018</p></a>
-          <a href='#2017' class='d-flex'><p class='button-url' href='#2017'>2017</p></a>
-          <a href='#2016' class='d-flex'><p class='button-url' href='#2016'>2016</p></a>
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills">
+        <div class="container">
+
+          <div class="section-title title-right">
+            <h2>Compétences</h2>
+          </div>
+
+          <div class="row skills-content px-3">
+
+            <div class="col-lg px-0" data-aos="fade-up">
+
+              <div class="filters-container">
+                <div class="filters-wrapper">
+                  <ul class="filter-tabs">
+                    <li>
+                      <button onclick="window.location.href = '#frontend';" class="filter-button filter-active" data-translate-value="0">
+                        FRONT END
+                      </button>
+                    </li>
+                    <li>
+                      <button onclick="window.location.href = '#backend';" class="filter-button" data-translate-value="100%">
+                        BACK END
+                      </button>
+                    </li>
+                    <li>
+                      <button onclick="window.location.href = '#design';" class="filter-button" data-translate-value="200%">
+                        DESIGN
+                      </button>
+                    </li>
+                    <li>
+                      <button onclick="window.location.href = '#softskills';" class="filter-button" data-translate-value="300%">
+                        SOFT SKILLS
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="filter-slider" aria-hidden="true">
+                    <div class="filter-slider-rect">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class='carousel-head row'>
+                <div class='owl-carousel carouselSkills'>
+
+                  <div class='item' data-hash="frontend">
+                    <div class='skill-bloc d-flex'>
+                      <div class='skill'>
+                        <img src='assets/img/icones/html.svg'>
+                        <p>HTML</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/css.svg'>
+                        <p>CSS</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/javascript.svg'>
+                        <p>JAVASCRIPT</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/jquery.png'>
+                        <p>JQUERY</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/wordpress.svg'>
+                        <p>WORDPRESS</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/prestashop.png'>
+                        <p>PRESTASHOP</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='item' data-hash="backend">
+                    <div class='skill-bloc d-flex'>
+                      <div class='skill'>
+                        <img src='assets/img/icones/php.svg'>
+                        <p>PHP</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/mysql.svg'>
+                        <p>MYSQL</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/symfony.svg'>
+                        <p>SYMFONY</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='item' data-hash="design">
+                    <div class='skill-bloc d-flex'>
+                      <div class='skill'>
+                        <img src='assets/img/icones/figma.svg'>
+                        <p>FIGMA</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/photoshop.svg'>
+                        <p>PHOTOSHOP</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/illustrator.svg'>
+                        <p>ILLUSTRATOR</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/indesign.svg'>
+                        <p>INDESIGN</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/adobexd.svg'>
+                        <p>ADOBE XD</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='item' data-hash="softskills">
+                    <div class='skill-bloc d-flex'>
+                      <div class='skill'>
+                        <img src='assets/img/icones/curiosite.png'>
+                        <p>CURIOSITÉ</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/creativite.png'>
+                        <p>CRÉATIVITÉ</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/adaptabilite.png'>
+                        <p>ADAPTABILITÉ</p>
+                      </div>
+                      <div class='skill'>
+                        <img src='assets/img/icones/teamwork.png'>
+                        <p>TEAMWORK</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
+      </section>
+      <!-- End Skills Section -->
 
-        <div class='carousel-head row'>
-          <div class='owl-carousel carouselExp'>
-            <div class='item' data-hash="2022">
-              <div class='exp-bloc d-flex'>
-                <img class='imgExp' src='assets/img/logo/bifrost.svg'>
-                <div class='col-lg-8'>
-                  <div class="timeline__header">
-                    <p class="timeline__timeframe">2021 - 2022 (6 mois)</p>
-                    <h3>Webdesigner / Développeur</h3>
-                    <h5>Bifrost Evolution, La Ciotat</h5>
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+
+          <div class="section-title title-left">
+            <h2>Portfolio</h2>
+          </div>
+
+          <div class="w-100" data-aos="fade-up" data-aos-delay="100">
+            <div class='d-flex justify-content-between portfo-bloc'>
+              <a class='link-portfo' href='projets-web.html'>
+                <div class='portfolio-cat d-flex' id='portfolio-web'>
+                  <div>
+                    <h4>PROJETS WEB</h4>
+                    <p>Création d'éléments graphiques<br>Maquettes sites internet</p>
                   </div>
-
-                  <div class="timeline__desc">
-                    <ul>
-                      <li>Création de sites Wordpress / Prestashop pour divers clients</li>
-                      <li>Création de sites sur mesure à l'aide du framework de l'entreprise</li>
-                      <li>Création de modules génériques visant à développer le framework</li>
-                      <li>Création et intégration de maquettes de sites suivant un cahier des charges</li>
-                      <li>Création d'éléments graphiques (logos, cartes de visite, autocollants connectés)</li>
-                    </ul>
+                  <div>
+                    <p>Accéder</p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class='item' data-hash="2021">
-              <div class='exp-bloc d-flex'>
-                <img class='imgExp' src='assets/img/logo/KMS.png'>
-                <div class='col-lg-8'>
-                  <div class="timeline__header">
-                    <p class="timeline__timeframe">2021 (3 mois)</p>
-                    <h3>STAGE DÉVELOPPEUR WEB FULL-STACK</h3>
-                    <h5>KMS, Marseille</h5>
-                  </div>
+              </a>
 
-                  <div class="timeline__desc">
-                    <ul>
-                      <li>Mise en avant du système de fidélité du site, utilisation de PHP, MySQL, Laravel</li>
-                      <li>Mise en place d'un système d'utilisation de points de fidélité dans le but d'obtenir des codes de
-                        réductions lors de l'inscription à un événement</li>
-                      <li>Création d'une page centralisant des événements sportifs, création de filtres et barre de
-                        recherche en JS ,JQuery</li>
-                      <li>Création de template de mails</li>
-                      <li>Création d'une charte graphique</li>
-                      <li>Refonte graphique de l'espace membre</li>
-                      <li>Améliorations graphiques et ergonomiques du site</li>
-                    </ul>
+              <a class='link-portfo' href='projets-graphiques.html'>
+                <div class='portfolio-cat d-flex' id='portfolio-graphique'>
+                  <div>
+                    <h4>PROJETS GRAPHIQUES</h4>
+                    <p>Création de sites internet sous diverses technologies<br>Création de jeux-vidéos</p>
+                  </div>
+                  <div>
+                    <p>Accéder</p>
                   </div>
                 </div>
-              </div>
-              <div class='exp-bloc d-flex'>
-                <img class='imgExp' src='assets/img/logo/passenum.jpg'>
-                <div class='col-lg-8'>
-                  <div class="timeline__header">
-                    <p class="timeline__timeframe">2020 - 2021</p>
-                    <h3>FORMATION DÉVELOPPEUR FULL-STACK</h3>
-                    <h5>Passerelle numérique d'école Centrale Marseille</h5>
-                  </div>
-
-                  <div class="timeline__desc">
-                    <ul>
-                      <li>Développement web front-end : UX/UI, HTML, CSS, Bootstrap, JavaScript, Angular</li>
-                      <li>Développement web back-end : PHP, Symfony, Apache, Node.js</li>
-                      <li>Développement web back-end : MySQL, MongoDB</li>
-                      <li>Théorie informatique : Algorithmique (programmation impérative et orientée objet), Modélisation de système informatique</li>
-                      <li>Gestion de projets web : Git, GitHub, Méthodes Agiles (Scrum)</li>
-                      <li>Systèmes de gestion de contenu : WordPress, Elementor</li>
-                      <li>Création de Serious Game</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
 
-            <div class='item' data-hash="2019">
-              <div class='exp-bloc d-flex'>
-                <img class='imgExp' src='assets/img/logo/esdac.png'>
-                <div class='col-lg-8'>
-                  <div class="timeline__header">
-                    <p class="timeline__timeframe">2017 - 2019</p>
-                    <h3>NIVEAU BTS DESIGN GRAPHIQUE</h3>
-                    <h5>ESDAC Marseille</h5>
-                  </div>
+          </div>
 
-                  <div class="timeline__desc">
-                    <ul>
-                      <li>Présentation de projets</li>
-                      <li>Animation</li>
-                      <li>Illustration</li>
-                      <li>Design médias imprimés</li>
-                      <li>Design médias numériques</li>
-                      <li>Suivi de projets graphiques</li>
-                      <li>Dessin d'intention</li>
-                      <li>Webdesign & Développement web (intégration)</li>
-                    </ul>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Resume Section ======= -->
+      <section id='exp-formation'>
+        <div class='container'>
+          <div class="section-title title-right">
+            <h2>Parcours</h2>
+          </div>
+
+          <div class="amazing-tabs">
+            <div class="main-tabs-wrapper">
+              <ul class="main-tabs">
+                <li>
+                  <button onclick="window.location.href = '#2022';" class="round-button" style="--round-button-active-color: white" data-translate-value="0">
+                    2022
+                  </button>
+                </li>
+                <li>
+                  <button onclick="window.location.href = '#2021';" class="round-button gallery active" style="--round-button-active-color: white" data-translate-value="100%">
+                    2021
+                  </button>
+                </li>
+                <li>
+                  <button onclick="window.location.href = '#2019';" class="round-button" style="--round-button-active-color: white" data-translate-value="200%">
+                    2019
+                  </button>
+                </li>
+                <li>
+                  <button onclick="window.location.href = '#2018';" class="round-button" style="--round-button-active-color: white" data-translate-value="300%">
+                    2018
+                  </button>
+                </li>
+                <li>
+                  <button onclick="window.location.href = '#2017';" class="round-button" style="--round-button-active-color: white" data-translate-value="400%">
+                    2017
+                  </button>
+                </li>
+                <li>
+                  <button onclick="window.location.href = '#2016';" class="round-button" style="--round-button-active-color: white" data-translate-value="500%">
+                    2016
+                  </button>
+                </li>
+              </ul>
+              <div class="main-slider" aria-hidden="true">
+                <div class="main-slider-circle">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+
+          <div class='carousel-head row'>
+            <div class='owl-carousel carouselExp'>
+              <div class='item' data-hash="2022">
+                <div class='exp-bloc d-flex'>
+                  <img class='imgExp' src='assets/img/logo/bifrost.svg'>
+                  <div class='col-lg-6'>
+                    <div class="timeline__header">
+                      <p class="timeline__timeframe">2021 - 2022 (6 mois)</p>
+                      <h3>Webdesigner / Développeur</h3>
+                      <h5>Bifrost Evolution, La Ciotat</h5>
+                    </div>
+                    <div class="timeline__desc">
+                      <ul>
+                        <li>Création de sites Wordpress / Prestashop pour divers clients</li>
+                        <li>Création de sites sur mesure à l'aide du framework de l'entreprise</li>
+                        <li>Création de modules génériques visant à développer le framework</li>
+                        <li>Création et intégration de maquettes de sites suivant un cahier des charges</li>
+                        <li>Création d'éléments graphiques (logos, cartes de visite, autocollants connectés)</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class='item' data-hash="2018">
-              <div class='exp-bloc d-flex'>
-                <img class='imgExp' src='assets/img/logo/ap-hm.png'>
-                <div class='col-lg-8'>
-                  <div class="timeline__header">
-                    <p class="timeline__timeframe">2018 (2 mois)</p>
-                    <h3>STAGE GRAPHISTE</h3>
-                    <h5>AP-HM, Marseille</h5>
+              <div class='item' data-hash="2021">
+                <div class='exp-bloc d-flex'>
+                  <img class='imgExp' src='assets/img/logo/KMS.png'>
+                  <div class='col-lg-6'>
+                    <div class="timeline__header">
+                      <p class="timeline__timeframe">2021 (3 mois)</p>
+                      <h3>STAGE DÉVELOPPEUR WEB FULL-STACK</h3>
+                      <h5>KMS, Marseille</h5>
+                    </div>
+                    <div class="timeline__desc">
+                      <ul>
+                        <li>Mise en avant du système de fidélité du site, utilisation de PHP, MySQL, Laravel</li>
+                        <li>Mise en place d'un système d'utilisation de points de fidélité dans le but d'obtenir des codes de réductions lors de l'inscription à un événement</li>
+                        <li>Création d'une page centralisant des événements sportifs, création de filtres et barre de recherche en JS ,JQuery</li>
+                        <li>Création de template de mails</li>
+                        <li>Création d'une charte graphique</li>
+                        <li>Refonte graphique de l'espace membre</li>
+                        <li>Améliorations graphiques et ergonomiques du site</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="timeline__desc">
-                    <ul>
-                      <li>Créations de pictogrammes dédiés à la création de documents médicaux</li>
-                      <li>Mise en page de divers supports imprimés : livrets, affiches, marque-page, documents A4 à
-                        destination des médecins</li>
-                      <li>Créations et préparations de fichiers pour impression notamment un livret de réservation de
-                        chambres d'hôpital à destination des hôpitaux de Marseille</li>
-                    </ul>
+                </div>
+                <div class='exp-bloc d-flex'>
+                  <img class='imgExp' src='assets/img/logo/passenum.jpg'>
+                  <div class='col-lg-6'>
+                    <div class="timeline__header">
+                      <p class="timeline__timeframe">2020 - 2021</p>
+                      <h3>FORMATION DÉVELOPPEUR FULL-STACK</h3>
+                      <h5>Passerelle numérique d'école Centrale Marseille</h5>
+                    </div>
+                    <div class="timeline__desc">
+                      <ul>
+                        <li>Développement web front-end : UX/UI, HTML, CSS, Bootstrap, JavaScript, Angular</li>
+                        <li>Développement web back-end : PHP, Symfony, Apache, Node.js</li>
+                        <li>Développement web back-end : MySQL, MongoDB</li>
+                        <li>Théorie informatique : Algorithmique (programmation impérative et orientée objet), Modélisation de système informatique</li>
+                        <li>Gestion de projets web : Git, GitHub, Méthodes Agiles (Scrum)</li>
+                        <li>Systèmes de gestion de contenu : WordPress, Elementor</li>
+                        <li>Création de Serious Game</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class='item' data-hash="2017">
-              <div class='exp-bloc d-flex'>
-                <img class='imgExp' src='assets/img/logo/esdac.png'>
-                <div class='col-lg-8'>
-                  <div class="timeline__header">
-                    <p class="timeline__timeframe">2016 - 2017</p>
-                    <h3>MISE À NIVEAU EN ARTS APPLIQUÉS</h3>
-                    <h5>ESDAC Marseille</h5>
-                  </div>
-
-                  <div class="timeline__desc">
-                    <ul>
-                      <li>Peinture</li>
-                      <li>Design de produit</li>
-                      <li>Design de mode</li>
-                      <li>Design d'espace</li>
-                      <li>Design graphique</li>
-                      <li>Dessin académique</li>
-                    </ul>
+              <div class='item' data-hash="2019">
+                <div class='exp-bloc d-flex'>
+                  <img class='imgExp' src='assets/img/logo/esdac.png'>
+                  <div class='col-lg-6'>
+                    <div class="timeline__header">
+                      <p class="timeline__timeframe">2017 - 2019</p>
+                      <h3>NIVEAU BTS DESIGN GRAPHIQUE</h3>
+                      <h5>ESDAC Marseille</h5>
+                    </div>
+                    <div class="timeline__desc">
+                      <ul>
+                        <li>Présentation de projets</li>
+                        <li>Animation</li>
+                        <li>Illustration</li>
+                        <li>Design médias imprimés</li>
+                        <li>Design médias numériques</li>
+                        <li>Suivi de projets graphiques</li>
+                        <li>Dessin d'intention</li>
+                        <li>Webdesign & Développement web (intégration)</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class='item' data-hash="2016">
-              <div class='exp-bloc d-flex'>
-                <img class='imgExp' src='assets/img/logo/HEH.png'>
-                <div class='col-lg-8'>
-                  <div class="timeline__header">
-                    <p class="timeline__timeframe">2015 - 2016</p>
-                    <h3>FORMATION INFOGRAPHISTE</h3>
-                    <h5>Haute École en Hainaut (Belgique)</h5>
+              <div class='item' data-hash="2018">
+                <div class='exp-bloc d-flex'>
+                  <img class='imgExp' src='assets/img/logo/ap-hm.png'>
+                  <div class='col-lg-6'>
+                    <div class="timeline__header">
+                      <p class="timeline__timeframe">2018 (2 mois)</p>
+                      <h3>STAGE GRAPHISTE</h3>
+                      <h5>AP-HM, Marseille</h5>
+                    </div>
+                    <div class="timeline__desc">
+                      <ul>
+                        <li>Créations de pictogrammes dédiés à la création de documents médicaux</li>
+                        <li>Mise en page de divers supports imprimés : livrets, affiches, marque-page, documents A4 à destination des médecins</li>
+                        <li>Créations et préparations de fichiers pour impression notamment un livret de réservation de chambres d'hôpital à destination des hôpitaux de Marseille</li>
+                      </ul>
+                    </div>
                   </div>
-
-                  <div class="timeline__desc">
-                    <ul>
-                      <li>Design graphique / infographie</li>
-                      <li>Développement web</li>
-                      <li>Dessin technique & DAO</li>
-                      <li>Design d'espace</li>
-                    </ul>
+                </div>
+              </div>
+              <div class='item' data-hash="2017">
+                <div class='exp-bloc d-flex'>
+                  <img class='imgExp' src='assets/img/logo/esdac.png'>
+                  <div class='col-lg-6'>
+                    <div class="timeline__header">
+                      <p class="timeline__timeframe">2016 - 2017</p>
+                      <h3>MISE À NIVEAU EN ARTS APPLIQUÉS</h3>
+                      <h5>ESDAC Marseille</h5>
+                    </div>
+                    <div class="timeline__desc">
+                      <ul>
+                        <li>Peinture</li>
+                        <li>Design de produit</li>
+                        <li>Design de mode</li>
+                        <li>Design d'espace</li>
+                        <li>Design graphique</li>
+                        <li>Dessin académique</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='item' data-hash="2016">
+                <div class='exp-bloc d-flex'>
+                  <img class='imgExp' src='assets/img/logo/HEH.png'>
+                  <div class='col-lg-6'>
+                    <div class="timeline__header">
+                      <p class="timeline__timeframe">2015 - 2016</p>
+                      <h3>FORMATION INFOGRAPHISTE</h3>
+                      <h5>Haute École en Hainaut (Belgique)</h5>
+                    </div>
+                    <div class="timeline__desc">
+                      <ul>
+                        <li>Design graphique / infographie</li>
+                        <li>Développement web</li>
+                        <li>Dessin technique & DAO</li>
+                        <li>Design d'espace</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact section-bg">
+        <div class="container">
 
-        <div class="section-title">
-          <h2>Contact</h2>
+          <div class="section-title title-left">
+            <h2>Contact</h2>
+          </div>
+          <h3 class="text-center contact-tel">+33 6 07 37 02 48</h3>
+          <h3 class="text-center contact-mail">nicolas.florentino00@gmail.com</h3>
+          <div class="d-flex social-links mt-3 text-center mx-auto justify-content-center">
+            <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin mx-2">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/aigash" target="_blank" class="github mx-2">
+              <i class='bx bxl-github'></i>
+            </a>
+          </div>
+          <div class='footer'>
+            <img>
+            <p>© Nicolas Florentino - 2023</p>
+          </div>
         </div>
-        <!--<h3 class="text-center">N'hésitez pas à me contacter pour divers renseignements supplémentaires.</h3>-->
-        <div class="d-flex social-links mt-3 text-center mx-auto justify-content-center">
-          <a id='tel-contact' href="tel:+33607370248" class="tel mx-2"><i
-              class="bx bx-phone"></i></a>
-          <a href="mailto:nicolas.florentino00@gmail.com" class="mail mx-2"><i class='bx bx-envelope'></i></a>
-          <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin mx-2"><i
-              class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/aigash" target="_blank" class="github mx-2"><i class='bx bxl-github'></i></a>
-        </div>
+      </section>
+      <!-- End Contact Section -->
 
-        <div id='box-tel'>
-          <p>06 07 37 02 48</p>
-        </div>
+    </main>
+    <!-- End #main -->
 
-      </div>
-    </section><!-- End Contact Section -->
+    <a href="#" class="back-to-top"><img src="assets/img/stylish-up.png" alt=""></a>
 
-  </main><!-- End #main -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
 
-  <a href="#" class="back-to-top"><img class="shadow" src="assets/img/stylish-up.png" alt=""></a>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scrollmain.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
+  </body>
 
 </html>

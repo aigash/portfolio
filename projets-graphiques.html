@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -14,9 +14,7 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,217 +26,231 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
 
-</head>
+  </head>
 
-<body>
+  <body id='graph'>
 
-    <button id='btnMenu' type='button'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi" fill="currentColor"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-            </path>
-        </svg>
-    </button>
-
-    <header id="header">
-
-        <div id='hideMenu'>
-            <img src='assets/img/back.svg'>
+    <nav id='main-menu' class="navbar navbar-expand-lg">
+      <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="bi" fill="currentColor" viewbox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+            </svg>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html#hero">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Projets
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="projets-web.html">Web</a>
+                <a class="dropdown-item" href="projets-graphiques.html">Graphiques</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#exp-formation">Parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="d-flex flex-column">
-
-            <div class="profile">
-                <a href="#hero">
-                    <img src="assets/img/logoNF.png" alt="" class="img-fluid">
-                </a>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://www.linkedin.com/in/florentino-nicolas/" target="_blank" class="linkedin"><i
-                            class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/aigash" target="_blank" class="github"><i class='bx bxl-github'></i></a>
-                </div>
-            </div>
-
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html#hero"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-                    <li><a href="projets-web.html"><i class="bx bx-book-content"></i>Projets web</a></li>
-                    <li class="active"><a href="projets-graphiques.html"><i class="bx bx-book-content"></i>Projets graphiques</a></li>
-                    <li><a href="index.html#about"><i class="bx bx-user"></i> <span>À propos</span></a></li>
-                    <li><a href="index.html#exp-formation"><i class="bx bx-file-blank"></i> <span>Parcours</span></a></li>
-                    <li><a href="index.html#contact"><i class="bx bx-envelope"></i>Contact</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-
-        </div>
-        <!-- ======= Footer ======= -->
-        <footer id="footer">
-            <div class="container">
-                <div class="copyright">
-                    <p>Nicolas "AiGash" Florentino - 2021</p>
-                </div>
-                <div class="credits">
-
-                </div>
-            </div>
-        </footer><!-- End  Footer -->
-
-    </header><!-- End Header -->
+      </div>
+    </nav>
 
     <main id="main">
-        <div id='creaGraphique' class="portfoElement">
-            <section class="breadcrumbs">
-                <div class="container">
-                    <div class="section-title p-0">
-                        <h2>Carousels graphique</h2>
-                    </div>
+      <div id='creaGraphique' class="portfoElement">
+        <section class="breadcrumbs">
+          <div class="container">
+            <div class="section-title title-left p-0">
+              <h2>Carousels graphique</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class='col-lg-9'>
+                <div class="owl-carousel carousel1">
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=197%3A354&viewport=241%2C48%2C1&scaling=contain&starting-point-node-id=280%3A51&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/hotel_header.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=95%3A3&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/jardinage_header.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=112%3A3&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=112%3A3&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/robe_header.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=217%3A2&viewport=241%2C48%2C0.5&scaling=contain&starting-point-node-id=217%3A2&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/barber_header.jpg'></a>
+                  </div>
                 </div>
-            </section>
-
-            <section class="portfolio-details">
-                <div class="container">
-                    <div class="carousel-head row">
-                        <div class='col-lg-9'>
-                            <div class="owl-carousel carousel1">
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=197%3A354&viewport=241%2C48%2C1&scaling=contain&starting-point-node-id=280%3A51&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/hotel_header.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=95%3A3&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/jardinage_header.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=112%3A3&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=112%3A3&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/robe_header.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=217%3A2&viewport=241%2C48%2C0.5&scaling=contain&starting-point-node-id=217%3A2&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/barber_header.jpg'></a></div>
-                            </div>
-                            <div class="owl-carousel carousel2">
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=197%3A2&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/hotel_select.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=192%3A130&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/jardinage_select.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=116%3A69&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=116%3A69&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/robe_list.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=261%3A50&viewport=241%2C48%2C0.5&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/barber_CTA.jpg'></a></div>
-                            </div>
-                            <div class="owl-carousel carousel1">
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=197%3A321&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/hotel_CTA.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=207%3A2&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=207%3A2&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/jardinage_product.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=162%3A73&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=116%3A69&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/robe_product.jpg'></a></div>
-                                <div><a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=242%3A129&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1'
-                                        target='_blank'><img src='assets/img/portfolio/barber_product.jpg'></a></div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="portfolio-info shadow">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Webdesign</li>
-                                    <li><strong>Type</strong>: Projet personnel</li>
-                                    <li><strong>Technologies</strong>: Figma, Photoshop</li>
-                                    <li><strong>Date</strong>: 22 Mars, 2022</li>
-                                    <li><strong>URL</strong>:  Tous les slides sont cliquables et mènent à leur prototype Figma</li>
-                                    <li>Cliquer dans le vide sur les prototypes Figma permet de voir les éléments cliquables.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="galerie row">
-                        <div class="col-lg-3 d-block d-lg-none">
-                            <div class="portfolio-info">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Webdesign</li>
-                                    <li><strong>Type</strong>: Projet personnel</li>
-                                    <li><strong>Technologies</strong>: Figma, Photoshop</li>
-                                    <li><strong>Date</strong>: 22 Mars, 2022</li>
-                                    <li><strong>URL</strong>:  Tous les slides sont cliquables et mènent à leur prototype Figma</li>
-                                    <li>Cliquer dans le vide sur les prototypes Figma permet de voir les éléments cliquables.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-description">
-                        <h3>Carousels graphique, qu'est-ce que c'est ?</h3>
-                            <h4>Contexte</h4>
-                            <p>
-                                L'idée de la création de ce multi-carousel m'est venu en faisant de la veille graphique. En voyant la mosaïques de projets d'un certains artiste j'ai pensé à en faire une sous forme de 3 carousels afin de présenter divers travaux graphiques. Ces travaux sont des éléments de sites web que j'ai réalisé dans un but d'amélioration personnelle.
-                            </p>
-                    </div>
+                <div class="owl-carousel carousel2">
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=197%3A2&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/hotel_select.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=192%3A130&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/jardinage_select.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=116%3A69&viewport=241%2C48%2C0.36&scaling=contain&starting-point-node-id=116%3A69&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/robe_list.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=261%3A50&viewport=241%2C48%2C0.5&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/barber_CTA.jpg'></a>
+                  </div>
                 </div>
-            </section>
-        </div>
-
-        <div class="portfoElement" id='bidrasil'>
-            <section class="breadcrumbs">
-                <div class="container">
-                    <div class="section-title p-0">
-                        <h2>BiDrasil</h2>
-                    </div>
+                <div class="owl-carousel carousel1">
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=197%3A321&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/hotel_CTA.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=207%3A2&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=207%3A2&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/jardinage_product.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=162%3A73&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=116%3A69&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/robe_product.jpg'></a>
+                  </div>
+                  <div>
+                    <a href='https://www.figma.com/proto/7p2Ww1KsVCgK47ibirhhDK/Untitled?page-id=95%3A2&node-id=242%3A129&viewport=241%2C48%2C0.24&scaling=contain&starting-point-node-id=95%3A3&show-proto-sidebar=1' target='_blank'><img src='assets/img/portfolio/barber_product.jpg'></a>
+                  </div>
                 </div>
-            </section>
+              </div>
 
-            <section class="portfolio-details">
-                <div class="container">
-                    <div class="carousel-head row">
-                        <div class="col-lg-9">
-                            <div>
-                                <a href="assets/img/bidrasil/maquette-presentation.jpg" class="venobox"><img
-                                        src="assets/img/bidrasil/maquette-presentation.jpg" class="img-fluid galerimg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 d-none d-lg-block">
-                            <div class="portfolio-info shadow">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Webdesign</li>
-                                    <li><strong>Type</strong>: Projet professionnel</li>
-                                    <li><strong>Technologies</strong>: Figma, Photoshop</li>
-                                    <li><strong>Date</strong>: 30 Mai, 2022</li>
-                                    <li><strong>URL du prototype</strong>: <a href="https://www.figma.com/proto/ap4Vyi8o7oZR1hscTUkgJN/BiDrasil?page-id=0%3A1&node-id=2%3A2&viewport=846%2C405%2C0.09&scaling=min-zoom&starting-point-node-id=2%3A286"
-                                            target="_blank">BiDrasil</a>
-                                    </li>
-                                    <li>Cliquer dans le vide sur le prototype Figma permet de voir les éléments cliquables.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galerie row">
-                        <div class="col-lg-3 d-block d-lg-none">
-                            <div class="portfolio-info">
-                                <h3>Informations sur le projet</h3>
-                                <ul>
-                                    <li><strong>Catégorie</strong>: Webdesign</li>
-                                    <li><strong>Type</strong>: Projet professionnel</li>
-                                    <li><strong>Technologies</strong>: Figma, Photoshop</li>
-                                    <li><strong>Date</strong>: 30 Mai, 2022</li>
-                                    <li><strong>URL du prototype</strong>: <a href="https://www.figma.com/proto/ap4Vyi8o7oZR1hscTUkgJN/BiDrasil?page-id=0%3A1&node-id=2%3A2&viewport=846%2C405%2C0.09&scaling=min-zoom&starting-point-node-id=2%3A286"
-                                            target="_blank">BiDrasil</a>
-                                    </li>
-                                    <li>Cliquer dans le vide sur le prototype figma permet de voir les éléments cliquables.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-description">
-                        <h3>BiDrasil, qu'est-ce que c'est ?</h3>
-                        <h4>Contexte</h4>
-                        <p>
-                            Cette maquette m'a été donné à faire lorsque j'étais développeur web / webdesigner à Bifrost Evolution. Mes seules restrictions étaient de réaliser 6 pages précises suivant une charte graphique déjà établie.
-                        </p>
-                        <h4>Fonctionnalités</h4>
-                        <p>BiDrasil est un éditeur de logiciels Opensource en ligne. Il permet donc à un utilisateur de s'abonner à une formule afin d'avoir accès à un certains nombre de logiciel et ce depuis son navigateur.</p>
-                    </div>
-
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Webdesign</li>
+                    <li>
+                      <strong>Type</strong>: Projet personnel</li>
+                    <li>
+                      <strong>Technologies</strong>: Figma, Photoshop</li>
+                    <li>
+                      <strong>Date</strong>: 22 Mars, 2022</li>
+                    <li>
+                      <strong>URL</strong>: Tous les slides sont cliquables et mènent à leur prototype Figma</li>
+                    <li>Cliquer dans le vide sur les prototypes Figma permet de voir les éléments cliquables.</li>
+                  </ul>
                 </div>
-            </section>
-        </div>
+              </div>
+            </div>
+
+            <div class="galerie row">
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Webdesign</li>
+                    <li>
+                      <strong>Type</strong>: Projet personnel</li>
+                    <li>
+                      <strong>Technologies</strong>: Figma, Photoshop</li>
+                    <li>
+                      <strong>Date</strong>: 22 Mars, 2022</li>
+                    <li>
+                      <strong>URL</strong>: Tous les slides sont cliquables et mènent à leur prototype Figma</li>
+                    <li>Cliquer dans le vide sur les prototypes Figma permet de voir les éléments cliquables.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-description">
+              <h3>Carousels graphique, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                L'idée de la création de ce multi-carousel m'est venu en faisant de la veille graphique. En voyant la mosaïques de projets d'un certains artiste j'ai pensé à en faire une sous forme de 3 carousels afin de présenter divers travaux graphiques. Ces travaux sont des éléments de sites web que j'ai réalisé dans un but d'amélioration personnelle.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="portfoElement" id='bidrasil'>
+        <section class="breadcrumbs">
+          <div class="container">
+            <div class="section-title title-left p-0">
+              <h2>BiDrasil</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio-details">
+          <div class="container">
+            <div class="carousel-head row">
+              <div class="col-lg-9">
+                <div>
+                  <a href="assets/img/bidrasil/maquette-presentation.jpg" class="venobox"><img src="assets/img/bidrasil/maquette-presentation.jpg" class="img-fluid galerimg" alt=""></a>
+                </div>
+              </div>
+              <div class="col-lg-3 d-none d-lg-block">
+                <div class="portfolio-info shadow">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Webdesign</li>
+                    <li>
+                      <strong>Type</strong>: Projet professionnel</li>
+                    <li>
+                      <strong>Technologies</strong>: Figma, Photoshop</li>
+                    <li>
+                      <strong>Date</strong>: 30 Mai, 2022</li>
+                    <li>
+                      <strong>URL du prototype</strong>:
+                      <a href="https://www.figma.com/proto/ap4Vyi8o7oZR1hscTUkgJN/BiDrasil?page-id=0%3A1&node-id=2%3A2&viewport=846%2C405%2C0.09&scaling=min-zoom&starting-point-node-id=2%3A286" target="_blank">BiDrasil</a>
+                    </li>
+                    <li>Cliquer dans le vide sur le prototype Figma permet de voir les éléments cliquables.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="galerie row">
+              <div class="col-lg-3 d-block d-lg-none">
+                <div class="portfolio-info">
+                  <h3>Informations sur le projet</h3>
+                  <ul>
+                    <li>
+                      <strong>Catégorie</strong>: Webdesign</li>
+                    <li>
+                      <strong>Type</strong>: Projet professionnel</li>
+                    <li>
+                      <strong>Technologies</strong>: Figma, Photoshop</li>
+                    <li>
+                      <strong>Date</strong>: 30 Mai, 2022</li>
+                    <li>
+                      <strong>URL du prototype</strong>:
+                      <a href="https://www.figma.com/proto/ap4Vyi8o7oZR1hscTUkgJN/BiDrasil?page-id=0%3A1&node-id=2%3A2&viewport=846%2C405%2C0.09&scaling=min-zoom&starting-point-node-id=2%3A286" target="_blank">BiDrasil</a>
+                    </li>
+                    <li>Cliquer dans le vide sur le prototype figma permet de voir les éléments cliquables.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-description">
+              <h3>BiDrasil, qu'est-ce que c'est ?</h3>
+              <h4>Contexte</h4>
+              <p>
+                Cette maquette m'a été donné à faire lorsque j'étais développeur web / webdesigner à Bifrost Evolution. Mes seules restrictions étaient de réaliser 6 pages précises suivant une charte graphique déjà établie.
+              </p>
+              <h4>Fonctionnalités</h4>
+              <p>BiDrasil est un éditeur de logiciels Opensource en ligne. Il permet donc à un utilisateur de s'abonner à une formule afin d'avoir accès à un certains nombre de logiciel et ce depuis son navigateur.</p>
+            </div>
+
+          </div>
+        </section>
+      </div>
 
     </main>
 
@@ -259,4 +271,4 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
