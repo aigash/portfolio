@@ -1267,20 +1267,23 @@ ul.main-tabs li {
     left:63px;
   }
 
+  #skills .section-title h2 {
+    -webkit-text-stroke-width: 1px;
+  }
   #skills .filter-button {
-    font-size:15px;
+    font-size: 12px;
   }
   #skills .filter-slider-rect {
-    height:22.5px;
+    height: 18px;
+  }
+  #skills .carouselSkills .skill-bloc .skill p {
+    font-size: 12px;
   }
   #skills .carouselSkills .skill-bloc {
     flex-wrap:wrap;
   }
   #skills .carouselSkills .skill-bloc .skill {
     width:30%;
-  }
-  #skills .carouselSkills .skill-bloc .skill p {
-    font-size:14px;
   }
   
   #portfolio .section-title h2 {
@@ -1311,46 +1314,5 @@ ul.main-tabs li {
   }
   .contact h3.contact-mail {
     font-size:24px;
-  }
-}
-
-@media (max-width: 340px) {
-  #main-menu {
-    left: 45px;
-  }
-  #hero-social {
-    right: 45px;
-  }
-
-  #hero .hero-container {
-    padding: 20px;
-  }
-
-  #skills .section-title h2 {
-    -webkit-text-stroke-width: 1px;
-  }
-  #skills .filter-button {
-    font-size: 11px;
-  }
-  #skills .filter-slider-rect {
-    height: 18px;
-  }
-  #skills .carouselSkills .skill-bloc .skill p {
-    font-size: 12px;
-  }
-
-  #portfolio .portfolio-cat h4 {
-    font-size: 24px;
-  }
-
-  .round-button, .main-slider-circle {
-    font-size:18px;
-  }
-
-  .contact h3.contact-tel {
-    font-size: 40px;
-  }
-  .contact h3.contact-mail {
-    font-size: 21px;
   }
 }
