@@ -29,13 +29,12 @@
 
 :root {
   --main-color:#1A1A24;
-  --translate-main-slider: 100%;
   --translate-filters-slider: 0;
   --filters-wrapper-opacity: 1;
   --font-title: 'Anton', sans-serif;
   --font-text: 'Red hat display', sans-serif;
   --round-button-active-color: #fff;
-  --translate-main-slider: 100%;
+  --translate-main-slider: 0%;
   --main-slider-color: #1a1a24;
 }
 
@@ -1097,6 +1096,9 @@ ul.main-tabs li {
     text-align:start;
   }
 
+  #skills .section-title h2 {
+    -webkit-text-stroke-width: 1px;
+  }
   .skills .skills-bloc>div {
     width:33%;
   }
@@ -1267,9 +1269,6 @@ ul.main-tabs li {
     left:63px;
   }
 
-  #skills .section-title h2 {
-    -webkit-text-stroke-width: 1px;
-  }
   #skills .filter-button {
     font-size: 12px;
   }
