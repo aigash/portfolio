@@ -1,14 +1,21 @@
 @font-face {
-  font-family: "Moonlite solid";
-  src: url("/fonts/Moonlite-Solid.otf") format("opentype"),
-        url("/fonts/Moonlite-Solid.ttf") format("truetype"),
-        url("/fonts/Moonlite-Solid.woff") format("woff"),
-        url("/fonts/Moonlite-Solid.woff2") format("woff2");
+  font-family: "Anton";
+  src: url("/fonts/Anton-Regular.ttf") format("truetype");
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/fonts/RedHatDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/fonts/RedHatDisplay-Bold.ttf") format("truetype");
+  font-weight:600;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/fonts/RedHatDisplay-Light.ttf") format("truetype");
+  font-weight:300;
+}
 
 *,
 *::before,
@@ -61,7 +68,7 @@ section {
 .section-title h2 {
   font-family: var(--font-title);
   font-size: 70px;
-  font-weight: bold;
+  font-weight: 600;
   position: relative;
   color: var(--main-color);
   width:100%;
@@ -251,12 +258,6 @@ section {
 --------------------------------------------------------------*/
 #about {
   padding-bottom:60px;
-}
-
-.about .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--main-color);
 }
 
 .about .content ul {
@@ -472,10 +473,6 @@ section {
   z-index:11;
 }
 
-.portfolio-cat>div:first-child p {
-  font-weight:300;
-}
-
 .portfolio-cat>div:nth-child(2) p {
   text-align:end;
   border-bottom:1px solid var(--main-color);
@@ -593,7 +590,7 @@ section {
 .portfolio .portfolio-text h3 {
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -1063,7 +1060,7 @@ ul.main-tabs li {
   #main-menu {
     position:absolute;
   }
-  
+
   #hero h1 {
     font-size:130px;
   }
@@ -1315,8 +1312,40 @@ ul.main-tabs li {
   }
 }
 
-@media (max-width: 399px) {
-  .skills .skills-bloc>div {
-    width:50%;
+@media (max-width: 340px) {
+  #main-menu {
+    left: 45px;
+  }
+  #hero-social {
+    right: 45px;
+  }
+
+  #hero .hero-container {
+    padding: 20px;
+  }
+
+  #skills .filter-button {
+    font-size: 12px;
+  }
+  #skills .filter-slider-rect {
+    height: 18px;
+  }
+  #skills .carouselSkills .skill-bloc .skill p {
+    font-size: 12px;
+  }
+
+  #portfolio .portfolio-cat h4 {
+    font-size: 24px;
+  }
+
+  .round-button, .main-slider-circle {
+    font-size:18px;
+  }
+
+  .contact h3.contact-tel {
+    font-size: 40px;
+  }
+  .contact h3.contact-mail {
+    font-size: 21px;
   }
 }
