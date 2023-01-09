@@ -1049,11 +1049,12 @@ ul.main-tabs li {
   }
 
   #hero h1 {
-    font-size:130px;
+    font-size:100px;
+    margin-bottom:0;
   }
 
   #hero p span {
-    font-size:80px;
+    font-size:50px;
   }
 
   .title-right {
@@ -1067,15 +1068,6 @@ ul.main-tabs li {
 @media (max-width: 1200px) {
   #main {
     margin-left: 0;
-  }
-
-  #hero h1 {
-    font-size:100px;
-    margin-bottom:0;
-  }
-
-  #hero p span {
-    font-size:50px;
   }
 
   .title-right {
