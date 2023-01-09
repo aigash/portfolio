@@ -1043,6 +1043,16 @@ ul.main-tabs li {
 }
 
 /* RESPONSIVE */
+@media (max-width:1920px) and (max-height:820px) {
+  #hero h1 {
+    font-size:100px;
+    margin-bottom:0;
+  }
+
+  #hero p span {
+    font-size:50px;
+  }
+}
 @media (max-width: 1400px) {
   #web #main-menu, #graph #main-menu {
     left:2em;
