@@ -84,15 +84,24 @@ section {
   margin-left:-100px;
 }
 
+.shadowp {
+  box-shadow: 0 0.1rem 0.5rem rgba(0,0,0,.15)!important;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1140px;
   }
 }
 
-.scroll, #graph .nav-link, #web .nav-link {
+.scroll, #graph .nav-link, #web .nav-link, #graph #main-menu .navbar-toggler-icon svg, #web #main-menu .navbar-toggler-icon svg {
   color: var(--main-color) !important;
 }
+
+/*#graph #main-menu, #web #main-menu {
+  top:15px;
+  left:15px;
+}*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -138,7 +147,7 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 #main-menu {
-  position: fixed;
+  position: absolute;
   top:130px;
   left:90px;
   z-index: 999;
@@ -171,6 +180,10 @@ section {
 }
 #main-menu .dropdown-menu a {
   color:#000;
+}
+#web #main-menu, #graph #main-menu {
+  position:relative;
+  top:60px;
 }
 
 #hero {
@@ -896,7 +909,7 @@ ul.main-tabs li {
   margin-bottom:0;
 }
 
-#main > .portfoElement:nth-child(odd) {
+#main > .portfoElement:nth-child(even) {
   background: url('../img/hero-bg4.jpg');
   background-size: cover;
 }
@@ -1029,37 +1042,10 @@ ul.main-tabs li {
   box-shadow: none !important;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  color: #f4f6fd;
-  position: absolute;
-  font-size: 14px;
-  left: 0;
-  bottom: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: end;
-  width: 100%;
-  text-align: center;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
-
 /* RESPONSIVE */
 @media (max-width: 1400px) {
-  #main-menu {
-    position:absolute;
+  #web #main-menu, #graph #main-menu {
+    left:2em;
   }
 
   #hero h1 {
@@ -1254,6 +1240,12 @@ ul.main-tabs li {
 
   #exp-formation .imgExp {
     margin-bottom:1em;
+  }
+}
+
+@media (max-width: 575px) {
+  #web #main-menu, #graph #main-menu {
+    left:15px;
   }
 }
 
