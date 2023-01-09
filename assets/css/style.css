@@ -1326,8 +1326,11 @@ ul.main-tabs li {
     padding: 20px;
   }
 
+  #skills .section-title h2 {
+    -webkit-text-stroke-width: 1px;
+  }
   #skills .filter-button {
-    font-size: 12px;
+    font-size: 11px;
   }
   #skills .filter-slider-rect {
     height: 18px;
